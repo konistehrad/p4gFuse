@@ -37,8 +37,22 @@
 		return result;
 	}
 
+	function GetResult( spread, first, second ) {
+		return spread[first][second];
+	}
+
 	NormalSpread = InitializeSpread();
 	TriangleSpread = InitializeSpread();
+
+
+	function GetNormalResult( first, second ) {
+		return GetResult(NormalSpread, first, second);
+	}
+
+	function GetTriangleResult( first, second, third ) {
+		var firstResult = GetNormalResult(first, second);
+		return GetResult( TriangleSpread, firstResult, third );
+	}
 
 	function AddSpread( spread, first, second, result ) {
 		spread[first][second] = result;
