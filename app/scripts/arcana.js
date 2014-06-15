@@ -23,9 +23,10 @@ var Fool = 0,
 	Sun =19,
 	Judgement =20,
 	Jester =21,
-	Aeon =22;
+	Aeon =22,
+	World = 23;
 
-var NumArcana = Aeon + 1;
+var NumArcana = World + 1;
 
 function InitializeSpread() {
 	var result = new Array(NumArcana);
@@ -756,6 +757,7 @@ module.exports = {
 	Judgement: Judgement,
 	Jester: Jester,
 	Aeon: Aeon,
+	World: World,
 
 	// ordered version, for sorting!
 	Ordered: [ Fool, Magician, Priestess, Empress, Emperor, Hierophant, Lovers, Chariot, Justice, Hermit, Fortune, Strength, HangedMan, Death, Temperance, Devil, Tower, Star, Moon, Sun, Judgement, Jester, Aeon ],

@@ -3334,7 +3334,6 @@ var personaByLvl =
         inherit: "Almighty",
         notes: "-"
     },
-    /*
     {
         arcana: Arcana.World,
         name_jp: "伊邪那岐大神",
@@ -3352,7 +3351,7 @@ var personaByLvl =
         skills: "Megidolaon, Victory Cry, Angelic Grace, Mind Charge, Agidyne(92), Bufudyne(93), Ziodyne(94), Garudyne(95), Fire Amp(96), Ice Amp(97), Elec Amp(98), Wind Amp(99)",
         inherit: "Null",
         notes: "Only in New Game+ with data from True Ending"
-    },*/
+    },
     {
         arcana: Arcana.Judgement,
         name_jp: "ルシファー",
@@ -3372,6 +3371,15 @@ var personaByLvl =
         notes: "Unlocked by maxing social link"
     }];
 
+function comparePersona(a, b) 
+{
+    var lvlDiff = a.level - b.level;
+    if( lvlDiff != 0 ) {
+        return lvlDiff;
+    }
+    return a.arcana - b.arcana;
+}
+
 var personaByArcana = [];
 var personaByName = {};
 for (var i = 0; i < Arcana.Count; i++) {
@@ -3384,8 +3392,33 @@ for (var i = 0; i < personaByLvl.length; i++) {
     personaByName[persona.name] = persona;
 };
 
+
+function NormalCalculation( first, second ) {
+    var resultPersona = null;
+    var resultLvlAvg = ((first.level + second.level) / 2 ) + 1;
+    var resultArcana = Arcana.GetNormalResult( first.arcana, second.arcana );
+    if( resultArcana !== null && resultArcana !== undefined ) 
+    {
+        var arcanaPersona = personaByArcana[resultArcana]; 
+        for (var i = 0; !resultPersona && i < arcanaPersona.length; i++) {
+            var persona = arcanaPersona[i];
+            if( persona.level >= resultLvlAvg ) 
+                resultPersona = persona;
+        };
+    }
+    
+    return resultPersona;
+}
+
+function TriangleCalculation(first,second,third) {
+    var args = Array.prototype.slice.call(arguments);
+    args.sort(comparePersona);
+
+}
+
 module.exports = {
     ByLevel: personaByLvl,
     ByArcana: personaByArcana,
-    ByName: personaByName
+    ByName: personaByName,
+    NormalCalculation: NormalCalculation
 }
