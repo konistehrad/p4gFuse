@@ -3716,8 +3716,9 @@ function findPersonaByLevel( arcana, level ) {
         var arcanaPersona = personaByArcana[arcana]; 
         for (var i = 0; !resultPersona && i < arcanaPersona.length; i++) {
             var persona = arcanaPersona[i];
-            if( persona.level >= level ) 
+            if( persona.level >= level ) {
                 resultPersona = persona;
+            }
         }
     }
     return resultPersona;
@@ -3753,7 +3754,7 @@ function BackCalc( persona ) {
 
     var result = [];
     var arcana = persona.arcana;
-    
+
     var normalArcanaMixes = Arcana.BackCalcNormal( arcana );
     if( normalArcanaMixes.length > 1 ) {
         for (var normalIdx = 0; normalIdx < normalArcanaMixes.length; normalIdx++) {
@@ -3775,15 +3776,20 @@ function BackCalc( persona ) {
             }
         }
     } else {
-
+        // ok, we're Jester or Aeon ...
+        for (var i = 0; i < personaByLvl.length; i++) {
+            for (var j = 0; j < personaByLvl.length; j++) {
+                for (var k = 0; k < personaByLvl.length; k++) {
+                    var first = personaByLvl[i], second = personaByLvl[j], third = personaByLvl[k];
+                    if( TriangleCalculation(first,second,third) == persona ) {
+                        result.push([first,second,third]);
+                    }
+                }
+            }
+        }
     }
 
-    return result;  
-    /*
-    var triangleMixes = Arcana.BackCalcTriangle( arcana );
-    normalArcanaMixes.push.apply(normalArcanaMixes, triangleMixes);
-    return normalArcanaMixes;
-    */
+    return result;
 }
 
 module.exports = {
