@@ -50,7 +50,9 @@ function GetNormalResult( first, second ) {
 
 function GetTriangleResult( first, second, third ) {
 	var firstResult = GetNormalResult(first, second);
-	return GetResult( TriangleSpread, firstResult, third );
+	if( firstResult !== null && firstResult !== undefined )
+		return GetResult( TriangleSpread, firstResult, third );
+	return null;
 }
 
 function AddSpread( spread, first, second, result ) {

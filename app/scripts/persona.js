@@ -3392,33 +3392,39 @@ for (var i = 0; i < personaByLvl.length; i++) {
     personaByName[persona.name] = persona;
 };
 
-
-function NormalCalculation( first, second ) {
+function findPersonaByLevel( arcana, level ) {
     var resultPersona = null;
-    var resultLvlAvg = ((first.level + second.level) / 2 ) + 1;
-    var resultArcana = Arcana.GetNormalResult( first.arcana, second.arcana );
-    if( resultArcana !== null && resultArcana !== undefined ) 
+    if( arcana !== null && arcana !== undefined ) 
     {
-        var arcanaPersona = personaByArcana[resultArcana]; 
+        var arcanaPersona = personaByArcana[arcana]; 
         for (var i = 0; !resultPersona && i < arcanaPersona.length; i++) {
             var persona = arcanaPersona[i];
-            if( persona.level >= resultLvlAvg ) 
+            if( persona.level >= level ) 
                 resultPersona = persona;
-        };
+        }
     }
-    
     return resultPersona;
+}
+
+function NormalCalculation( first, second ) {
+    var level = ((first.level + second.level) / 2 ) + 1;
+    var arcana = Arcana.GetNormalResult( first.arcana, second.arcana );
+    return findPersonaByLevel(arcana, level);
 }
 
 function TriangleCalculation(first,second,third) {
     var args = Array.prototype.slice.call(arguments);
     args.sort(comparePersona);
 
+    var level = ((first.level + second.level + third.level) / 3 ) + 5;
+    var arcana = Arcana.GetTriangleResult( args[0].arcana, args[1].arcana, args[2].arcana );
+    return findPersonaByLevel(arcana, level);
 }
 
 module.exports = {
     ByLevel: personaByLvl,
     ByArcana: personaByArcana,
     ByName: personaByName,
-    NormalCalculation: NormalCalculation
+    NormalCalculation: NormalCalculation,
+    TriangleCalculation: TriangleCalculation
 }
