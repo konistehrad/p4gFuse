@@ -732,33 +732,37 @@ AddTriangleSpreads( Magician,
 AddTriangleSpreads(Fool);
 
 module.exports = {
-	Arcana: {
-		Fool: Fool,
-		Magician: Magician,
-		Priestess: Priestess,
-		Empress: Empress,
-		Emperor: Emperor,
-		Hierophant: Hierophant,
-		Lovers: Lovers,
-		Chariot: Chariot,
-		Justice: Justice,
-		Hermit: Hermit,
-		Fortune: Fortune,
-		Strength: Strength,
-		HangedMan: HangedMan,
-		Death: Death,
-		Temperance: Temperance,
-		Devil: Devil,
-		Tower: Tower,
-		Star: Star,
-		Moon: Moon,
-		Sun: Sun,
-		Judgement: Judgement,
-		Jester: Jester,
-		Aeon: Aeon
-	},
+	// poor man's enum
+	Fool: Fool,
+	Magician: Magician,
+	Priestess: Priestess,
+	Empress: Empress,
+	Emperor: Emperor,
+	Hierophant: Hierophant,
+	Lovers: Lovers,
+	Chariot: Chariot,
+	Justice: Justice,
+	Hermit: Hermit,
+	Fortune: Fortune,
+	Strength: Strength,
+	HangedMan: HangedMan,
+	Death: Death,
+	Temperance: Temperance,
+	Devil: Devil,
+	Tower: Tower,
+	Star: Star,
+	Moon: Moon,
+	Sun: Sun,
+	Judgement: Judgement,
+	Jester: Jester,
+	Aeon: Aeon,
+
+	// ordered version, for sorting!
+	Ordered: [ Fool, Magician, Priestess, Empress, Emperor, Hierophant, Lovers, Chariot, Justice, Hermit, Fortune, Strength, HangedMan, Death, Temperance, Devil, Tower, Star, Moon, Sun, Judgement, Jester, Aeon ],
+
+	Count: NumArcana,
+
+	// "static" methods
 	GetNormalResult: GetNormalResult,
 	GetTriangleResult: GetTriangleResult
 }
-
-
