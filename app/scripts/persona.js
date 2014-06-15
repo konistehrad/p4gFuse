@@ -3738,10 +3738,59 @@ function TriangleCalculation(first,second,third) {
     return findPersonaByLevel(arcana, level);
 }
 
+function convertFromNameList( nameList ) {
+    var result = [];
+    for (var i = 0; i < nameList.length; i++) {
+        result.push( personaByName[nameList[i]] );
+    }
+    return result;
+}
+
+function BackCalc( persona ) {
+    // damn special persona think they own the place!
+    if( persona.fusionRecipeNames )
+        return convertFromNameList(persona.fusionRecipeNames);
+
+    var result = [];
+    var arcana = persona.arcana;
+    
+    var normalArcanaMixes = Arcana.BackCalcNormal( arcana );
+    if( normalArcanaMixes.length > 1 ) {
+        for (var normalIdx = 0; normalIdx < normalArcanaMixes.length; normalIdx++) {
+            var mix = normalArcanaMixes[normalIdx];
+            var first = mix[0], second = mix[1];
+
+            if( first != second )
+            {
+                var firstList = personaByArcana[first];
+                var secondList = personaByArcana[second];
+                for (var i = 0; i < firstList.length; i++) {
+                    for (var j = 0; j < secondList.length; j++) {
+                        var firstPersona = firstList[i], secondPersona = secondList[j];
+                        if( NormalCalculation(firstPersona, secondPersona) == persona ) {
+                            result.push([firstPersona, secondPersona]);
+                        }
+                    }
+                }
+            }
+        }
+    } else {
+
+    }
+
+    return result;  
+    /*
+    var triangleMixes = Arcana.BackCalcTriangle( arcana );
+    normalArcanaMixes.push.apply(normalArcanaMixes, triangleMixes);
+    return normalArcanaMixes;
+    */
+}
+
 module.exports = {
     ByLevel: personaByLvl,
     ByArcana: personaByArcana,
     ByName: personaByName,
     NormalCalculation: NormalCalculation,
-    TriangleCalculation: TriangleCalculation
+    TriangleCalculation: TriangleCalculation,
+    BackCalc: BackCalc
 }

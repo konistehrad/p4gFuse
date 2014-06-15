@@ -37,35 +37,30 @@ function InitializeSpread() {
 }
 
 function GetResult( spread, first, second ) {
-	return spread[first][second];
+	var result = spread[first][second];
+	// do commutative search if we came up short
+	if( result === undefined || result === null )
+		result = spread[second][first];
+	return result;
 }
 
 var NormalSpread = InitializeSpread();
 var TriangleSpread = InitializeSpread();
 
 
-function GetNormalResult( first, second ) {
-	return GetResult(NormalSpread, first, second);
-}
-
-function GetTriangleResult( first, second, third ) {
-	var firstResult = GetNormalResult(first, second);
-	if( firstResult !== null && firstResult !== undefined )
-		return GetResult( TriangleSpread, firstResult, third );
-	return null;
-}
-
-function AddSpread( spread, first, second, result ) {
+function AddSpread( spread, first, second, result, commutative ) {
 	spread[first][second] = result;
-	spread[second][first] = result; // results are communicative 
+	if( commutative ) {
+		spread[second][first] = result;
+	}
 }
 
 function AddNormalSpread( first, second, result ) {
-	AddSpread(NormalSpread, first, second, result);
+	AddSpread(NormalSpread, first, second, result, false);
 }
 
 function AddTriangleSpread( first, second, result ) {
-	AddSpread(TriangleSpread, first, second, result);
+	AddSpread(TriangleSpread, first, second, result, true);
 }
 
 function AddSpreads() {
@@ -734,6 +729,91 @@ AddTriangleSpreads( Magician,
 
 AddTriangleSpreads(Fool);
 
+
+function GetNormalResult( first, second ) {
+	if( first == second )
+		return null;
+	
+	return GetResult(NormalSpread, first, second);
+}
+
+function GetTriangleResult( first, second, third ) {
+	if( first == second || second == third || first == third )
+		return null;
+
+	var firstResult = GetNormalResult(first, second);
+	if( firstResult !== null && firstResult !== undefined )
+		return GetResult( TriangleSpread, firstResult, third );
+	return null;
+}
+
+function BackCalc(spread,target){
+	var result = [];
+	for (var i = 0; i < spread.length; i++) {
+		var arcanaResults = spread[i];
+		for (var j = 0; j < arcanaResults.length; j++) {
+			if( arcanaResults[j] === target ) {
+				result.push([i,j]);
+			}
+		};
+	};
+	return result;
+}
+
+function BackCalcNormal( target ) {
+	return BackCalc(NormalSpread,target);
+}
+
+function BackCalcTriangle( target ) {
+//	return BackCalc(TriangleSpread,target);
+
+	var result = [];
+
+	for (var firstArcana = 0; firstArcana < TriangleSpread.length; firstArcana++) {
+		var arcanaResults = TriangleSpread[firstArcana];
+
+		for (var secondArcana = 0; secondArcana < arcanaResults.length; secondArcana++) {
+			if( arcanaResults[secondArcana] === target ) {
+				var firstPredicates = BackCalcNormal( firstArcana );
+				for (var i = 0; i < firstPredicates.length; i++) {
+					var pair = firstPredicates[i];
+					result.push( [pair[0], pair[1], secondArcana] );
+				};
+			}
+		}
+	}
+
+	return result;
+}
+
+function ToString( arcana ) {
+	if( arcana === Fool ) return "Fool";
+	if( arcana === Magician ) return "Magician";
+	if( arcana === Priestess ) return "Priestess";
+	if( arcana === Empress ) return "Empress";
+	if( arcana === Emperor ) return "Emperor";
+	if( arcana === Hierophant ) return "Hierophant";
+	if( arcana === Lovers ) return "Lovers";
+	if( arcana === Chariot ) return "Chariot";
+	if( arcana === Justice ) return "Justice";
+	if( arcana === Hermit ) return "Hermit";
+	if( arcana === Fortune ) return "Fortune";
+	if( arcana === Strength ) return "Strength";
+	if( arcana === HangedMan ) return "HangedMan";
+	if( arcana === Death ) return "Death";
+	if( arcana === Temperance ) return "Temperance";
+	if( arcana === Devil ) return "Devil";
+	if( arcana === Tower ) return "Tower";
+	if( arcana === Star ) return "Star";
+	if( arcana === Moon ) return "Moon";
+	if( arcana === Sun ) return "Sun";
+	if( arcana === Judgement ) return "Judgement";
+	if( arcana === Jester ) return "Jester";
+	if( arcana === Aeon ) return "Aeon";
+	if( arcana === World ) return "World";
+	return "[[BAD]]";
+}
+
 module.exports = {
 	// poor man's enum
 	Fool: Fool,
@@ -762,11 +842,14 @@ module.exports = {
 	World: World,
 
 	// ordered version, for sorting!
-	Ordered: [ Fool, Magician, Priestess, Empress, Emperor, Hierophant, Lovers, Chariot, Justice, Hermit, Fortune, Strength, HangedMan, Death, Temperance, Devil, Tower, Star, Moon, Sun, Judgement, Jester, Aeon ],
+	Ordered: [ Fool, Magician, Priestess, Empress, Emperor, Hierophant, Lovers, Chariot, Justice, Hermit, Fortune, Strength, HangedMan, Death, Temperance, Devil, Tower, Star, Moon, Sun, Judgement, Jester, Aeon, World ],
 
 	Count: NumArcana,
 
 	// "static" methods
 	GetNormalResult: GetNormalResult,
-	GetTriangleResult: GetTriangleResult
+	GetTriangleResult: GetTriangleResult,
+	BackCalcNormal: BackCalcNormal,
+	BackCalcTriangle: BackCalcTriangle,
+	ToString: ToString
 }
