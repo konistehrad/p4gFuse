@@ -13,10 +13,10 @@ var personaByLvl =
             physical: "-",
             fire: "-",
             ice: "-",
-            electric: "Rs",
+            electric: "Str",
             wind: "Wk",
             light: "-",
-            dark: "Nu"
+            dark: "Nul"
         },
         skills: "Zio, Cleave, Rakukaja, Rakunda(3), Tarukaja(5)",
         inherit: "Elec",
@@ -32,7 +32,7 @@ var personaByLvl =
             fire: "Wk",
             ice: "-",
             electric: "-",
-            wind: "Rs",
+            wind: "Str",
             light: "-",
             dark: "-"
         },
@@ -44,9 +44,10 @@ var personaByLvl =
         arcana: Arcana.Chariot,
         name_jp: "スライム",
         name: "Slime",
+        specialFusion: true,
         level: 2,
         elements: {
-            physical: "Rs",
+            physical: "Str",
             fire: "Wk",
             ice: "-",
             electric: "-",
@@ -62,10 +63,11 @@ var personaByLvl =
         arcana: Arcana.Devil,
         name_jp: "ウコバク",
         name: "Ukobach",
+        specialFusion: true,
         level: 3,
         elements: {
             physical: "-",
-            fire: "Rs",
+            fire: "Str",
             ice: "Wk",
             electric: "-",
             wind: "-",
@@ -86,8 +88,8 @@ var personaByLvl =
             fire: "-",
             ice: "-",
             electric: "-",
-            wind: "Rs",
-            light: "Rs",
+            wind: "Str",
+            light: "Str",
             dark: "Wk"
         },
         skills: "Garu, Patra, Hama(5), Sukukaja(6), Regenerate 1(8), Hama Boost(9)",
@@ -122,7 +124,7 @@ var personaByLvl =
             fire: "-",
             ice: "-",
             electric: "Wk",
-            wind: "Rs",
+            wind: "Str",
             light: "-",
             dark: "-"
         },
@@ -137,7 +139,7 @@ var personaByLvl =
         level: 6,
         elements: {
             physical: "-",
-            fire: "Rs",
+            fire: "Str",
             ice: "-",
             electric: "Wk",
             wind: "-",
@@ -156,11 +158,11 @@ var personaByLvl =
         elements: {
             physical: "-",
             fire: "-",
-            ice: "Rs",
+            ice: "Str",
             electric: "Wk",
             wind: "-",
             light: "-",
-            dark: "Nu"
+            dark: "Nul"
         },
         skills: "Bufu, Skewer, Tarukaja, Rakunda(7), Poisma(8), Dodge Elec(10)",
         inherit: "Ice",
@@ -174,7 +176,7 @@ var personaByLvl =
         elements: {
             physical: "-",
             fire: "Wk",
-            ice: "Rs",
+            ice: "Str",
             electric: "-",
             wind: "-",
             light: "-",
@@ -193,7 +195,7 @@ var personaByLvl =
             physical: "-",
             fire: "-",
             ice: "Wk",
-            electric: "Rs",
+            electric: "Str",
             wind: "-",
             light: "-",
             dark: "-"
@@ -209,7 +211,7 @@ var personaByLvl =
         level: 8,
         elements: {
             physical: "-",
-            fire: "Rs",
+            fire: "Str",
             ice: "Wk",
             electric: "-",
             wind: "-",
@@ -228,7 +230,7 @@ var personaByLvl =
         elements: {
             physical: "-",
             fire: "-",
-            ice: "Rs",
+            ice: "Str",
             electric: "-",
             wind: "Wk",
             light: "-",
@@ -245,7 +247,7 @@ var personaByLvl =
         level: 9,
         elements: {
             physical: "-",
-            fire: "Nu",
+            fire: "Nul",
             ice: "-",
             electric: "Wk",
             wind: "-",
@@ -264,7 +266,7 @@ var personaByLvl =
         elements: {
             physical: "-",
             fire: "Wk",
-            ice: "Nu",
+            ice: "Nul",
             electric: "-",
             wind: "-",
             light: "Wk",
@@ -286,7 +288,7 @@ var personaByLvl =
             electric: "-",
             wind: "-",
             light: "Wk",
-            dark: "Rs"
+            dark: "Str"
         },
         skills: "Zio, Mudo, Enervation, Enervate Boost(12), Sukukaja(13), Mamudo(15)",
         inherit: "Dark",
@@ -302,7 +304,7 @@ var personaByLvl =
             fire: "Wk",
             ice: "-",
             electric: "-",
-            wind: "Rs",
+            wind: "Str",
             light: "-",
             dark: "-"
         },
@@ -318,7 +320,7 @@ var personaByLvl =
         elements: {
             physical: "-",
             fire: "-",
-            ice: "Rs",
+            ice: "Str",
             electric: "-",
             wind: "Wk",
             light: "-",
@@ -339,7 +341,7 @@ var personaByLvl =
             ice: "-",
             electric: "-",
             wind: "-",
-            light: "Nu",
+            light: "Nul",
             dark: "Wk"
         },
         skills: "Hama, Double Fangs, Patra, Media(12), Muzzle Shot(13), Sharp Student(14), Survive Dark(15)",
@@ -356,7 +358,7 @@ var personaByLvl =
             fire: "-",
             ice: "-",
             electric: "Wk",
-            wind: "Rs",
+            wind: "Str",
             light: "-",
             dark: "-"
         },
@@ -371,9 +373,9 @@ var personaByLvl =
         level: 12,
         elements: {
             physical: "-",
-            fire: "Rs",
+            fire: "Str",
             ice: "-",
-            electric: "Nu",
+            electric: "Nul",
             wind: "Wk",
             light: "-",
             dark: "-"
@@ -388,13 +390,13 @@ var personaByLvl =
         name: "Eligor",
         level: 12,
         elements: {
-            physical: "Rs",
+            physical: "Str",
             fire: "-",
             ice: "-",
             electric: "-",
             wind: "Wk",
             light: "-",
-            dark: "Rs"
+            dark: "Str"
         },
         skills: "Poisonous Skewer, Agi, Maragi(13), Arm Chopper(14), Fire Boost(15), Soul Break(16), Resist Exhaust(17)",
         inherit: "Phys",
@@ -406,8 +408,8 @@ var personaByLvl =
         name: "Obariyon",
         level: 13,
         elements: {
-            physical: "Rs",
-            fire: "Rs",
+            physical: "Str",
+            fire: "Str",
             ice: "-",
             electric: "-",
             wind: "-",
@@ -427,7 +429,7 @@ var personaByLvl =
             physical: "-",
             fire: "-",
             ice: "Wk",
-            electric: "Rs",
+            electric: "Str",
             wind: "-",
             light: "-",
             dark: "-"
@@ -444,7 +446,7 @@ var personaByLvl =
         elements: {
             physical: "-",
             fire: "Wk",
-            ice: "Nu",
+            ice: "Nul",
             electric: "-",
             wind: "-",
             light: "-",
@@ -463,8 +465,8 @@ var personaByLvl =
             physical: "-",
             fire: "Wk",
             ice: "-",
-            electric: "Rs",
-            wind: "Nu",
+            electric: "Str",
+            wind: "Nul",
             light: "-",
             dark: "-"
         },
@@ -479,7 +481,7 @@ var personaByLvl =
         level: 15,
         elements: {
             physical: "-",
-            fire: "Nu",
+            fire: "Nul",
             ice: "-",
             electric: "-",
             wind: "Wk",
@@ -498,7 +500,7 @@ var personaByLvl =
         elements: {
             physical: "-",
             fire: "Wk",
-            ice: "Nu",
+            ice: "Nul",
             electric: "-",
             wind: "-",
             light: "-",
@@ -517,7 +519,7 @@ var personaByLvl =
             physical: "-",
             fire: "-",
             ice: "-",
-            electric: "Nu",
+            electric: "Nul",
             wind: "Wk",
             light: "-",
             dark: "-"
@@ -534,7 +536,7 @@ var personaByLvl =
         elements: {
             physical: "-",
             fire: "-",
-            ice: "Nu",
+            ice: "Nul",
             electric: "-",
             wind: "Wk",
             light: "-",
@@ -551,12 +553,12 @@ var personaByLvl =
         level: 17,
         elements: {
             physical: "-",
-            fire: "Rs",
+            fire: "Str",
             ice: "-",
             electric: "-",
             wind: "-",
             light: "Wk",
-            dark: "Nu"
+            dark: "Nul"
         },
         skills: "Mudo, Maragi, Mamudo(19), Agilao(20), Rampage(21), Mudo Boost(22)",
         inherit: "Dark",
@@ -570,10 +572,10 @@ var personaByLvl =
         elements: {
             physical: "-",
             fire: "Wk",
-            ice: "Nu",
+            ice: "Nul",
             electric: "-",
             wind: "-",
-            light: "Rs",
+            light: "Str",
             dark: "-"
         },
         skills: "Mabufu, Rakunda, Swift Strike(20), Ice Boost(21), Bufula(22), Auto-Tarukaja(23)",
@@ -586,7 +588,7 @@ var personaByLvl =
         name: "Ara Mitama",
         level: 18,
         elements: {
-            physical: "Rs",
+            physical: "Str",
             fire: "-",
             ice: "-",
             electric: "Wk",
@@ -599,6 +601,23 @@ var personaByLvl =
         notes: "Steamy Bathhouse, Marukyu Striptease"
     },
     {
+        arcana: Arcana.Aeon,
+        name: "Ame-no-Uzume",
+        level: 18,
+        elements: {
+            physical: "-",
+            fire: "-",
+            ice: "-",
+            electric: "Wk",
+            wind: "Nul",
+            light: "Nul",
+            dark: "-"
+        },
+        skills: "",
+        inherit: "",
+        notes: ""
+    },
+    {
         arcana: Arcana.Justice,
         name_jp: "プリンシパリティ",
         name: "Principality",
@@ -609,7 +628,7 @@ var personaByLvl =
             ice: "-",
             electric: "-",
             wind: "-",
-            light: "Nu",
+            light: "Nul",
             dark: "Wk"
         },
         skills: "Hama, Twin Shot, Mahama(21), Media(22), Resist Confuse(23), Survive Dark(24), Tetraja(25)",
@@ -626,9 +645,9 @@ var personaByLvl =
             fire: "Wk",
             ice: "-",
             electric: "-",
-            wind: "Rs",
+            wind: "Str",
             light: "-",
-            dark: "Rs"
+            dark: "Str"
         },
         skills: "Foolish Whisper, Evil Touch, Life Drain(20), Foul Breath(21), Brain Shake(22), Ghastly Wail(23), Fear Boost(24)",
         inherit: "Bad Stat",
@@ -643,7 +662,7 @@ var personaByLvl =
             physical: "-",
             fire: "-",
             ice: "-",
-            electric: "Nu",
+            electric: "Nul",
             wind: "Wk",
             light: "-",
             dark: "-"
@@ -661,7 +680,7 @@ var personaByLvl =
             physical: "-",
             fire: "-",
             ice: "Wk",
-            electric: "Nu",
+            electric: "Nul",
             wind: "-",
             light: "-",
             dark: "-"
@@ -671,18 +690,35 @@ var personaByLvl =
         notes: "Steamy Bathhouse, Marukyu Striptease"
     },
     {
+        arcana: Arcana.Jester,
+        name: "Gurr",
+        level: 20,
+        elements: {
+            physical: "-",
+            fire: "-",
+            ice: "-",
+            electric: "-",
+            wind: "Str",
+            light: "Wk",
+            dark: "Str"
+        },
+        skills: "",
+        inherit: "",
+        notes: ""
+    },
+    {
         arcana: Arcana.Fool,
         name_jp: "レギオン",
         name: "Legion",
         level: 21,
         elements: {
             physical: "-",
-            fire: "Rs",
-            ice: "Rs",
+            fire: "Str",
+            ice: "Str",
             electric: "-",
             wind: "-",
             light: "Wk",
-            dark: "Rs"
+            dark: "Str"
         },
         skills: "Tentarafoo, Mudo, Evil Smile, Rampage(23), Confuse Boost(24), Foul Breath(25), Survive Light(26)",
         inherit: "Bad Stat",
@@ -696,8 +732,8 @@ var personaByLvl =
         elements: {
             physical: "-",
             fire: "Wk",
-            ice: "Rs",
-            electric: "Nu",
+            ice: "Str",
+            electric: "Nul",
             wind: "-",
             light: "-",
             dark: "Wk"
@@ -715,7 +751,7 @@ var personaByLvl =
             physical: "-",
             fire: "-",
             ice: "Wk",
-            electric: "Nu",
+            electric: "Nul",
             wind: "-",
             light: "-",
             dark: "-"
@@ -732,7 +768,7 @@ var personaByLvl =
         elements: {
             physical: "-",
             fire: "Wk",
-            ice: "Ab",
+            ice: "Dr",
             electric: "-",
             wind: "-",
             light: "-",
@@ -750,11 +786,11 @@ var personaByLvl =
         elements: {
             physical: "-",
             fire: "Wk",
-            ice: "Rs",
+            ice: "Str",
             electric: "-",
             wind: "-",
             light: "-",
-            dark: "Nu"
+            dark: "Nul"
         },
         skills: "Cell Breaker, Mabufu, Enervate Boost(24), Foul Breath(25), Poison Mist(26), Poison Boost(27)",
         inherit: "Bad Stat",
@@ -766,7 +802,7 @@ var personaByLvl =
         name: "Rakshasa",
         level: 23,
         elements: {
-            physical: "Rs",
+            physical: "Str",
             fire: "-",
             ice: "Wk",
             electric: "-",
@@ -788,7 +824,7 @@ var personaByLvl =
             fire: "-",
             ice: "-",
             electric: "Wk",
-            wind: "Nu",
+            wind: "Nul",
             light: "-",
             dark: "-"
         },
@@ -826,11 +862,28 @@ var personaByLvl =
             electric: "-",
             wind: "-",
             light: "-",
-            dark: "Nu"
+            dark: "Nul"
         },
         skills: "Tetrakarn, Cell Breaker, Mamudo, Stagnant Air(26), Resist Light(27), Life Drain(28), Spirit Drain(29)",
         inherit: "Support",
         notes: "Marukyu Striptease"
+    },
+    {
+        arcana: Arcana.Aeon,
+        name: "Narcissus",
+        level: 24,
+        elements: {
+            physical: "Wk",
+            fire: "-",
+            ice: "Str",
+            electric: "Str",
+            wind: "Str",
+            light: "-",
+            dark: "-"
+        },
+        skills: "",
+        inherit: "",
+        notes: ""
     },
     {
         arcana: Arcana.Magician,
@@ -839,7 +892,7 @@ var personaByLvl =
         level: 25,
         elements: {
             physical: "-",
-            fire: "Nu",
+            fire: "Nul",
             ice: "Wk",
             electric: "-",
             wind: "-",
@@ -859,7 +912,7 @@ var personaByLvl =
             physical: "-",
             fire: "-",
             ice: "-",
-            electric: "Nu",
+            electric: "Nul",
             wind: "Wk",
             light: "-",
             dark: "-"
@@ -874,12 +927,12 @@ var personaByLvl =
         name: "Ares",
         level: 25,
         elements: {
-            physical: "Rs",
+            physical: "Str",
             fire: "-",
             ice: "-",
             electric: "-",
             wind: "Wk",
-            light: "Nu",
+            light: "Nul",
             dark: "-"
         },
         skills: "Gale Slash, Counter, Dodge Wind(27), Rampage(28), Dekaja(29), Power Charge(30)",
@@ -894,7 +947,7 @@ var personaByLvl =
         elements: {
             physical: "-",
             fire: "Wk",
-            ice: "Nu",
+            ice: "Nul",
             electric: "-",
             wind: "-",
             light: "-",
@@ -911,12 +964,12 @@ var personaByLvl =
         level: 26,
         elements: {
             physical: "-",
-            fire: "Rs",
+            fire: "Str",
             ice: "-",
-            electric: "Rs",
+            electric: "Str",
             wind: "-",
             light: "-",
-            dark: "Nu"
+            dark: "Nul"
         },
         skills: "Poison Mist, Agilao, Nervundi, Poison Boost(28), Null Poison(29), Soul Break(30), Maragion(32)",
         inherit: "Bad Stat",
@@ -929,10 +982,10 @@ var personaByLvl =
         level: 27,
         elements: {
             physical: "-",
-            fire: "Rs",
+            fire: "Str",
             ice: "-",
             electric: "Wk",
-            wind: "Nu",
+            wind: "Nul",
             light: "-",
             dark: "Wk"
         },
@@ -947,12 +1000,12 @@ var personaByLvl =
         level: 27,
         elements: {
             physical: "-",
-            fire: "Nu",
+            fire: "Nul",
             ice: "Wk",
             electric: "-",
-            wind: "Rs",
+            wind: "Str",
             light: "Wk",
-            dark: "Nu"
+            dark: "Nul"
         },
         skills: "Agilao, Sukunda, Auto-Sukukaja(29), Diarama(30), Resist Silence(31), Dodge Physical(32), Resist Ice(33)",
         inherit: "Fire",
@@ -977,6 +1030,23 @@ var personaByLvl =
         notes: "Marukyu Striptease, Void Quest"
     },
     {
+        arcana: Arcana.Jester,
+        name: "Take-Minakata",
+        level: 27,
+        elements: {
+            physical: "Str",
+            fire: "-",
+            ice: "-",
+            electric: "Str",
+            wind: "-",
+            light: "Wk",
+            dark: "Wk"
+        },
+        skills: "",
+        inherit: "",
+        notes: ""
+    },    
+    {
         arcana: Arcana.Strength,
         name_jp: "クシミタマ",
         name: "Kusi Mitama",
@@ -986,7 +1056,7 @@ var personaByLvl =
             fire: "-",
             ice: "-",
             electric: "Wk",
-            wind: "Nu",
+            wind: "Nul",
             light: "-",
             dark: "-"
         },
@@ -1001,12 +1071,12 @@ var personaByLvl =
         level: 28,
         elements: {
             physical: "-",
-            fire: "Nu",
+            fire: "Nul",
             ice: "-",
             electric: "-",
             wind: "-",
             light: "Wk",
-            dark: "Nu"
+            dark: "Nul"
         },
         skills: "Agilao, Evil Smile, Mind Slice, Stagnant Air(30), Spirit Drain(32), Ghastly Wail(33)",
         inherit: "Bad Stat",
@@ -1020,7 +1090,7 @@ var personaByLvl =
         elements: {
             physical: "-",
             fire: "Wk",
-            ice: "Ab",
+            ice: "Dr",
             electric: "-",
             wind: "-",
             light: "-",
@@ -1038,7 +1108,7 @@ var personaByLvl =
         elements: {
             physical: "-",
             fire: "-",
-            ice: "Nu",
+            ice: "Nul",
             electric: "-",
             wind: "Wk",
             light: "-",
@@ -1054,8 +1124,8 @@ var personaByLvl =
         name: "Oni",
         level: 30,
         elements: {
-            physical: "Rs",
-            fire: "Nu",
+            physical: "Str",
+            fire: "Nul",
             ice: "-",
             electric: "-",
             wind: "-",
@@ -1072,11 +1142,11 @@ var personaByLvl =
         name: "Ose",
         level: 31,
         elements: {
-            physical: "Rs",
+            physical: "Str",
             fire: "-",
             ice: "-",
             electric: "-",
-            wind: "Nu",
+            wind: "Nul",
             light: "Wk",
             dark: "-"
         },
@@ -1092,10 +1162,10 @@ var personaByLvl =
         elements: {
             physical: "-",
             fire: "-",
-            ice: "Nu",
+            ice: "Nul",
             electric: "Wk",
             wind: "-",
-            light: "Nu",
+            light: "Nul",
             dark: "-"
         },
         skills: "Mahama, Seal Bomb, Tetra Break(33), Hamaon(34), Dodge Elec(35), Hama Boost(36), Null Silence(37)",
@@ -1109,7 +1179,7 @@ var personaByLvl =
         level: 31,
         elements: {
             physical: "-",
-            fire: "Ab",
+            fire: "Dr",
             ice: "Wk",
             electric: "-",
             wind: "-",
@@ -1121,13 +1191,30 @@ var personaByLvl =
         notes: "Void Quest"
     },
     {
+        arcana: Arcana.Aeon,
+        name: "Sati",
+        level: 31,
+        elements: {
+            physical: "-",
+            fire: "Nul",
+            ice: "Wk",
+            electric: "-",
+            wind: "-",
+            light: "-",
+            dark: "-"
+        },
+        skills: "",
+        inherit: "",
+        notes: ""
+    },
+    {
         arcana: Arcana.Magician,
         name_jp: "ジャックランタン",
         name: "Pyro Jack",
         level: 32,
         elements: {
             physical: "-",
-            fire: "Ab",
+            fire: "Dr",
             ice: "Wk",
             electric: "-",
             wind: "-",
@@ -1144,13 +1231,13 @@ var personaByLvl =
         name: "Neko Shogun",
         level: 32,
         elements: {
-            physical: "Rs",
+            physical: "Str",
             fire: "-",
             ice: "-",
             electric: "Rf",
             wind: "Wk",
-            light: "Nu",
-            dark: "Nu"
+            light: "Nul",
+            dark: "Nul"
         },
         skills: "Zionga, Elec Boost, Black Spot, Mediarama(34), Matarukaja(35), Evade Wind(36), Divine Grace(37)",
         inherit: "Support",
@@ -1164,7 +1251,7 @@ var personaByLvl =
         elements: {
             physical: "-",
             fire: "Wk",
-            ice: "Ab",
+            ice: "Dr",
             electric: "-",
             wind: "-",
             light: "-",
@@ -1183,9 +1270,9 @@ var personaByLvl =
             physical: "-",
             fire: "-",
             ice: "Wk",
-            electric: "Nu",
+            electric: "Nul",
             wind: "-",
-            light: "Nu",
+            light: "Nul",
             dark: "Wk"
         },
         skills: "Mahama, Garula, Posumudi, Fatal End(35), Blue Wall(37), Hama Boost(38), Resist Dark(39)",
@@ -1199,7 +1286,7 @@ var personaByLvl =
         level: 33,
         elements: {
             physical: "-",
-            fire: "Rs",
+            fire: "Str",
             ice: "Wk",
             electric: "Rf",
             wind: "-",
@@ -1218,7 +1305,7 @@ var personaByLvl =
         elements: {
             physical: "-",
             fire: "-",
-            ice: "Nu",
+            ice: "Nul",
             electric: "-",
             wind: "-",
             light: "Wk",
@@ -1237,7 +1324,7 @@ var personaByLvl =
             physical: "-",
             fire: "Wk",
             ice: "-",
-            electric: "Nu",
+            electric: "Nul",
             wind: "-",
             light: "-",
             dark: "-"
@@ -1254,8 +1341,8 @@ var personaByLvl =
         elements: {
             physical: "-",
             fire: "Wk",
-            ice: "Nu",
-            electric: "Nu",
+            ice: "Nul",
+            electric: "Nul",
             wind: "Wk",
             light: "-",
             dark: "-"
@@ -1265,16 +1352,33 @@ var personaByLvl =
         notes: "Void Quest"
     },
     {
+        arcana: Arcana.Jester,
+        name: "Pale Rider",
+        level: 34,
+        elements: {
+            physical: "-",
+            fire: "-",
+            ice: "-",
+            electric: "-",
+            wind: "Str",
+            light: "Wk",
+            dark: "Nul"
+        },
+        skills: "",
+        inherit: "",
+        notes: ""
+    },
+    {
         arcana: Arcana.Fortune,
         name_jp: "フォルトゥナ",
         name: "Fortuna",
         level: 35,
         elements: {
             physical: "-",
-            fire: "Nu",
+            fire: "Nul",
             ice: "-",
             electric: "Wk",
-            wind: "Nu",
+            wind: "Nul",
             light: "-",
             dark: "-"
         },
@@ -1307,10 +1411,10 @@ var personaByLvl =
         level: 36,
         elements: {
             physical: "-",
-            fire: "Nu",
+            fire: "Nul",
             ice: "Wk",
             electric: "-",
-            wind: "Rs",
+            wind: "Str",
             light: "-",
             dark: "-"
         },
@@ -1326,11 +1430,11 @@ var personaByLvl =
         elements: {
             physical: "-",
             fire: "-",
-            ice: "Rs",
-            electric: "Nu",
+            ice: "Str",
+            electric: "Nul",
             wind: "Wk",
             light: "-",
-            dark: "Nu"
+            dark: "Nul"
         },
         skills: "Mudoon, Matarunda, Poison Mist, Dekunda(38), Megido(39), Mudo Boost(40), Survive Light(41)",
         inherit: "Dark",
@@ -1344,7 +1448,7 @@ var personaByLvl =
         elements: {
             physical: "-",
             fire: "Wk",
-            ice: "Nu",
+            ice: "Nul",
             electric: "-",
             wind: "-",
             light: "-",
@@ -1373,14 +1477,32 @@ var personaByLvl =
         notes: "Void Quest, Secret Laboratory"
     },
     {
+        arcana: Arcana.Aeon,
+        name: "Raja Naga",
+        level: 37,
+        elements: {
+            physical: "Str",
+            fire: "Wk",
+            ice: "-",
+            electric: "Nul",
+            wind: "-",
+            light: "-",
+            dark: "-"
+        },
+        skills: "",
+        inherit: "",
+        notes: ""
+    },    
+    {
         arcana: Arcana.Fool,
         name_jp: "ジャアクフロスト",
         name: "Black Frost",
+        specialFusion: true,
         level: 38,
         elements: {
             physical: "-",
-            fire: "Ab",
-            ice: "Ab",
+            fire: "Dr",
+            ice: "Dr",
             electric: "-",
             wind: "-",
             light: "-",
@@ -1399,7 +1521,7 @@ var personaByLvl =
             physical: "-",
             fire: "-",
             ice: "-",
-            electric: "Nu",
+            electric: "Nul",
             wind: "Wk",
             light: "Rf",
             dark: "Wk"
@@ -1433,7 +1555,7 @@ var personaByLvl =
         level: 39,
         elements: {
             physical: "-",
-            fire: "Nu",
+            fire: "Nul",
             ice: "Wk",
             electric: "-",
             wind: "-",
@@ -1452,7 +1574,7 @@ var personaByLvl =
         elements: {
             physical: "-",
             fire: "-",
-            ice: "Nu",
+            ice: "Nul",
             electric: "Wk",
             wind: "-",
             light: "-",
@@ -1472,13 +1594,30 @@ var personaByLvl =
             fire: "-",
             ice: "Wk",
             electric: "-",
-            wind: "Rs",
-            light: "Nu",
+            wind: "Str",
+            light: "Nul",
             dark: "-"
         },
         skills: "Masukukaja, Nervundi, Agilao, Null Fear(43), Growth 2(44), Diarahan(45), Cool Breeze(46)",
         inherit: "Support",
         notes: "Void Quest, Secret Laboratory"
+    },
+    {
+        arcana: Arcana.Jester,
+        name: "Loa",
+        level: 40,
+        elements: {
+            physical: "-",
+            fire: "-",
+            ice: "-",
+            electric: "-",
+            wind: "Str",
+            light: "Wk",
+            dark: "Str"
+        },
+        skills: "",
+        inherit: "",
+        notes: ""
     },
     {
         arcana: Arcana.Emperor,
@@ -1506,9 +1645,9 @@ var personaByLvl =
         elements: {
             physical: "-",
             fire: "Wk",
-            ice: "Nu",
+            ice: "Nul",
             electric: "-",
-            wind: "Nu",
+            wind: "Nul",
             light: "-",
             dark: "-"
         },
@@ -1523,12 +1662,12 @@ var personaByLvl =
         level: 41,
         elements: {
             physical: "-",
-            fire: "Rs",
-            ice: "Rs",
+            fire: "Str",
+            ice: "Str",
             electric: "-",
             wind: "Wk",
             light: "-",
-            dark: "Nu"
+            dark: "Nul"
         },
         skills: "Mediarama, Energy Shower, Old One, Makarakarn(43), Green Wall(44), Null Enervate(45), Enervate Boost(46)",
         inherit: "Recovery",
@@ -1542,9 +1681,9 @@ var personaByLvl =
         elements: {
             physical: "-",
             fire: "Wk",
-            ice: "Nu",
+            ice: "Nul",
             electric: "-",
-            wind: "Rs",
+            wind: "Str",
             light: "-",
             dark: "-"
         },
@@ -1558,9 +1697,9 @@ var personaByLvl =
         name: "Hanuman",
         level: 42,
         elements: {
-            physical: "Rs",
+            physical: "Str",
             fire: "-",
-            ice: "Nu",
+            ice: "Nul",
             electric: "Wk",
             wind: "-",
             light: "-",
@@ -1576,7 +1715,7 @@ var personaByLvl =
         name: "Triglav",
         level: 43,
         elements: {
-            physical: "Rs",
+            physical: "Str",
             fire: "-",
             ice: "-",
             electric: "Wk",
@@ -1613,11 +1752,11 @@ var personaByLvl =
         level: 44,
         elements: {
             physical: "-",
-            fire: "Rs",
+            fire: "Str",
             ice: "-",
             electric: "-",
             wind: "-",
-            light: "Nu",
+            light: "Nul",
             dark: "Wk"
         },
         skills: "Mabufula, Mediarama, Energy Shower(45), Survive Dark(47), Heat Wave(48), Divine Grace(50)",
@@ -1654,11 +1793,28 @@ var personaByLvl =
             electric: "-",
             wind: "-",
             light: "Wk",
-            dark: "Nu"
+            dark: "Nul"
         },
         skills: "Agilao, Mudoon, Maragion(46), Mudo Boost(47), Spirit Drain(48), Resist Light(49), Invigorate 3(50)",
         inherit: "Bad Stat",
         notes: "Secret Laboratory"
+    },
+    {
+        arcana: Arcana.Aeon,
+        name: "Kushinada",
+        level: 44,
+        elements: {
+            physical: "-",
+            fire: "-",
+            ice: "-",
+            electric: "-",
+            wind: "-",
+            light: "Nul",
+            dark: "Wk"
+        },
+        skills: "",
+        inherit: "",
+        notes: ""
     },
     {
         arcana: Arcana.Emperor,
@@ -1669,7 +1825,7 @@ var personaByLvl =
             physical: "-",
             fire: "-",
             ice: "-",
-            electric: "Nu",
+            electric: "Nul",
             wind: "Wk",
             light: "Rf",
             dark: "Wk"
@@ -1705,9 +1861,9 @@ var personaByLvl =
             physical: "Wk",
             fire: "-",
             ice: "-",
-            electric: "Nu",
-            wind: "Rs",
-            light: "Nu",
+            electric: "Nul",
+            wind: "Str",
+            light: "Nul",
             dark: "-"
         },
         skills: "Agidyne, Matarunda, Tetrakarn, Evade Physical(48), Megidola(50), Fire Amp(51), Resist Physical(52)",
@@ -1723,7 +1879,7 @@ var personaByLvl =
             physical: "-",
             fire: "-",
             ice: "-",
-            electric: "Nu",
+            electric: "Nul",
             wind: "Wk",
             light: "-",
             dark: "Rf"
@@ -1738,7 +1894,7 @@ var personaByLvl =
         name: "Cu Chulainn",
         level: 46,
         elements: {
-            physical: "Rs",
+            physical: "Str",
             fire: "-",
             ice: "Wk",
             electric: "-",
@@ -1778,7 +1934,7 @@ var personaByLvl =
             fire: "Wk",
             ice: "-",
             electric: "-",
-            wind: "Nu",
+            wind: "Nul",
             light: "-",
             dark: "-"
         },
@@ -1792,12 +1948,12 @@ var personaByLvl =
         name: "Narasimha",
         level: 47,
         elements: {
-            physical: "Rs",
+            physical: "Str",
             fire: "Wk",
             ice: "-",
             electric: "-",
             wind: "-",
-            light: "Nu",
+            light: "Nul",
             dark: "-"
         },
         skills: "Hamaon, Tempest Slash, Counterstrike(48), Evade Wind(49), Mahamaon(51), Auto-Mataru(53)",
@@ -1805,15 +1961,32 @@ var personaByLvl =
         notes: "Secret Laboratory"
     },
     {
+        arcana: Arcana.Jester,
+        name: "Baphomet",
+        level: 47,
+        elements: {
+            physical: "-",
+            fire: "-",
+            ice: "-",
+            electric: "-",
+            wind: "-",
+            light: "Wk",
+            dark: "Nul"
+        },
+        skills: "",
+        inherit: "",
+        notes: ""
+    },    
+    {
         arcana: Arcana.Priestess,
         name_jp: "キクリヒメ",
         name: "Kikuri-hime",
         level: 48,
         elements: {
             physical: "-",
-            fire: "Nu",
+            fire: "Nul",
             ice: "-",
-            electric: "Rs",
+            electric: "Str",
             wind: "-",
             light: "-",
             dark: "Wk"
@@ -1829,10 +2002,10 @@ var personaByLvl =
         level: 48,
         elements: {
             physical: "-",
-            fire: "Rs",
+            fire: "Str",
             ice: "-",
             electric: "Wk",
-            wind: "Ab",
+            wind: "Dr",
             light: "-",
             dark: "-"
         },
@@ -1865,11 +2038,11 @@ var personaByLvl =
         level: 49,
         elements: {
             physical: "-",
-            fire: "Ab",
+            fire: "Dr",
             ice: "-",
             electric: "-",
             wind: "-",
-            light: "Nu",
+            light: "Nul",
             dark: "Wk"
         },
         skills: "Hamaon, Agidyne, Hama Boost, Mind Charge(51), Regenerate 2(53), Resist Dark(54), Endure Dark(55)",
@@ -1883,11 +2056,11 @@ var personaByLvl =
         level: 49,
         elements: {
             physical: "-",
-            fire: "Ab",
+            fire: "Dr",
             ice: "-",
             electric: "-",
             wind: "Rf",
-            light: "Nu",
+            light: "Nul",
             dark: "-"
         },
         skills: "Agidyne, Masukukaja, Fire Boost, Heat Wave(51), Power Charge(52), Dodge Physical(53), Maragidyne(54), Mind Charge(55)",
@@ -1902,11 +2075,11 @@ var personaByLvl =
         elements: {
             physical: "-",
             fire: "-",
-            ice: "Nu",
+            ice: "Nul",
             electric: "Wk",
             wind: "-",
             light: "-",
-            dark: "Nu"
+            dark: "Nul"
         },
         skills: "Bufudyne, Mudoon, Deathbound(52), Revolution(53), High Counter(54), Power Charge(55)",
         inherit: "Ice",
@@ -1922,7 +2095,7 @@ var personaByLvl =
             fire: "-",
             ice: "-",
             electric: "Wk",
-            wind: "Nu",
+            wind: "Nul",
             light: "-",
             dark: "-"
         },
@@ -1937,7 +2110,7 @@ var personaByLvl =
         level: 51,
         elements: {
             physical: "-",
-            fire: "Nu",
+            fire: "Nul",
             ice: "Wk",
             electric: "-",
             wind: "-",
@@ -1956,9 +2129,9 @@ var personaByLvl =
         elements: {
             physical: "-",
             fire: "-",
-            ice: "Rs",
+            ice: "Str",
             electric: "Wk",
-            wind: "Nu",
+            wind: "Nul",
             light: "-",
             dark: "-"
         },
@@ -1967,6 +2140,23 @@ var personaByLvl =
         notes: "-"
     },
     {
+        arcana: Arcana.Aeon,
+        name: "Quetzalcoatl",
+        level: 51,
+        elements: {
+            physical: "-",
+            fire: "-",
+            ice: "-",
+            electric: "-",
+            wind: "Str",
+            light: "Nul",
+            dark: "Wk"
+        },
+        skills: "",
+        inherit: "",
+        notes: ""
+    },    
+    {
         arcana: Arcana.Empress,
         name_jp: "スカディ",
         name: "Skadi",
@@ -1974,9 +2164,9 @@ var personaByLvl =
         elements: {
             physical: "-",
             fire: "Wk",
-            ice: "Ab",
+            ice: "Dr",
             electric: "-",
-            wind: "Rs",
+            wind: "Str",
             light: "-",
             dark: "-"
         },
@@ -2013,7 +2203,7 @@ var personaByLvl =
             ice: "Rf",
             electric: "-",
             wind: "-",
-            light: "Nu",
+            light: "Nul",
             dark: "Wk"
         },
         skills: "Diarahan, Megidola, Masukukaja(55), Amrita(56), Null Dizzy(57), Mediarahan(59)",
@@ -2032,7 +2222,7 @@ var personaByLvl =
             electric: "Rf",
             wind: "-",
             light: "Wk",
-            dark: "Nu"
+            dark: "Nul"
         },
         skills: "Ziodyne, Makarakarn, Old One(54), Maziodyne(55), Elec Break(56), Ailment Boost(57)",
         inherit: "Elec",
@@ -2044,12 +2234,12 @@ var personaByLvl =
         name: "Tam Lin",
         level: 53,
         elements: {
-            physical: "Rs",
-            fire: "Rs",
+            physical: "Str",
+            fire: "Str",
             ice: "-",
-            electric: "Nu",
+            electric: "Nul",
             wind: "-",
-            light: "Nu",
+            light: "Nul",
             dark: "-"
         },
         skills: "Ziodyne, Deathbound, High Counter, Auto-Maraku(54), Power Charge(55), Elec Amp(56), Evade Physical(58), Enduring Soul(59)",
@@ -2062,7 +2252,7 @@ var personaByLvl =
         name: "Kin-ki",
         level: 54,
         elements: {
-            physical: "Nu",
+            physical: "Nul",
             fire: "-",
             ice: "-",
             electric: "-",
@@ -2104,7 +2294,7 @@ var personaByLvl =
             electric: "-",
             wind: "-",
             light: "Wk",
-            dark: "Nu"
+            dark: "Nul"
         },
         skills: "Mamudoon, Evil Smile, Ghastly Wail(57), Bufudyne(58), Stagnant Air(59), Resist Physical(60), Ice Boost(61)",
         inherit: "Dark",
@@ -2117,8 +2307,8 @@ var personaByLvl =
         level: 55,
         elements: {
             physical: "-",
-            fire: "Nu",
-            ice: "Rs",
+            fire: "Nul",
+            ice: "Str",
             electric: "-",
             wind: "-",
             light: "Wk",
@@ -2129,14 +2319,31 @@ var personaByLvl =
         notes: "-"
     },
     {
+        arcana: Arcana.Jester,
+        name: "Kumbhanda",
+        level: 55,
+        elements: {
+            physical: "-",
+            fire: "Dr",
+            ice: "-",
+            electric: "-",
+            wind: "Wk",
+            light: "-",
+            dark: "-"
+        },
+        skills: "",
+        inherit: "",
+        notes: ""
+    },
+    {
         arcana: Arcana.Fool,
         name_jp: "シキオウジ",
         name: "Shiki-Ouji",
         level: 56,
         elements: {
             physical: "-",
-            fire: "Nu",
-            ice: "Nu",
+            fire: "Nul",
+            ice: "Nul",
             electric: "-",
             wind: "Wk",
             light: "-",
@@ -2155,10 +2362,10 @@ var personaByLvl =
             physical: "-",
             fire: "Wk",
             ice: "-",
-            electric: "Nu",
+            electric: "Nul",
             wind: "-",
             light: "Wk",
-            dark: "Nu"
+            dark: "Nul"
         },
         skills: "Aeon Rain, Dekaja, Matarukaja, Null Enervate(58), Power Charge(60), Evade Physical(61), Absorb Fire(62)",
         inherit: "Recovery",
@@ -2190,7 +2397,7 @@ var personaByLvl =
         elements: {
             physical: "-",
             fire: "Wk",
-            ice: "Ab",
+            ice: "Dr",
             electric: "Rf",
             wind: "-",
             light: "-",
@@ -2211,7 +2418,7 @@ var personaByLvl =
             ice: "-",
             electric: "-",
             wind: "-",
-            light: "Nu",
+            light: "Nul",
             dark: "Wk"
         },
         skills: "Maragion, Hamaon, High Counter(60), Agidyne(61), Endure Dark(62), Fire Amp(63), Null Dark(64)",
@@ -2224,9 +2431,9 @@ var personaByLvl =
         name: "Ananta",
         level: 58,
         elements: {
-            physical: "Rs",
+            physical: "Str",
             fire: "-",
-            ice: "Ab",
+            ice: "Dr",
             electric: "Wk",
             wind: "-",
             light: "-",
@@ -2243,17 +2450,34 @@ var personaByLvl =
         level: 58,
         elements: {
             physical: "-",
-            fire: "Nu",
+            fire: "Nul",
             ice: "Wk",
             electric: "-",
             wind: "-",
-            light: "Nu",
+            light: "Nul",
             dark: "Rf"
         },
         skills: "Mudoon, Hamaon, Agidyne(60), Evade Ice(62), Mahamaon(63), Mamudoon(65), Hama Boost(66), Mudo Boost(67)",
         inherit: "Dark",
         notes: "Heaven"
     },
+    {
+        arcana: Arcana.Aeon,
+        name: "Kingu",
+        level: 58,
+        elements: {
+            physical: "-",
+            fire: "Wk",
+            ice: "Nul",
+            electric: "-",
+            wind: "-",
+            light: "Nul",
+            dark: "-"
+        },
+        skills: "",
+        inherit: "",
+        notes: ""
+    },     
     {
         arcana: Arcana.Priestess,
         name_jp: "ハリティー",
@@ -2262,9 +2486,9 @@ var personaByLvl =
         elements: {
             physical: "-",
             fire: "-",
-            ice: "Nu",
+            ice: "Nul",
             electric: "Wk",
-            wind: "Rs",
+            wind: "Str",
             light: "-",
             dark: "-"
         },
@@ -2283,7 +2507,7 @@ var personaByLvl =
             ice: "-",
             electric: "-",
             wind: "-",
-            light: "Nu",
+            light: "Nul",
             dark: "-"
         },
         skills: "Hamaon, Makarakarn, Mudoon, Poison Arrow(60), Mustard Bomb(61), Megidola(62), Mahamaon(64), Hama Boost(65)",
@@ -2298,11 +2522,11 @@ var personaByLvl =
         elements: {
             physical: "-",
             fire: "-",
-            ice: "Rs",
+            ice: "Str",
             electric: "Rf",
             wind: "Wk",
             light: "Wk",
-            dark: "Nu"
+            dark: "Nul"
         },
         skills: "Maziodyne, Mamudoon, Mudo Boost(62), Foolish Whisper(63), Resist Fire(64), Ailment Boost(65)",
         inherit: "Elec",
@@ -2315,11 +2539,11 @@ var personaByLvl =
         level: 60,
         elements: {
             physical: "-",
-            fire: "Nu",
+            fire: "Nul",
             ice: "-",
             electric: "-",
             wind: "-",
-            light: "Nu",
+            light: "Nul",
             dark: "Wk"
         },
         skills: "Hamaon, Diarahan, Makarakarn, Agidyne(62), Endure Dark(63), Mahamaon(64), Hama Boost(65), Samsara(67)",
@@ -2335,7 +2559,7 @@ var personaByLvl =
             physical: "-",
             fire: "-",
             ice: "-",
-            electric: "Ab",
+            electric: "Dr",
             wind: "-",
             light: "Wk",
             dark: "Rf"
@@ -2354,7 +2578,7 @@ var personaByLvl =
             fire: "-",
             ice: "-",
             electric: "Wk",
-            wind: "Ab",
+            wind: "Dr",
             light: "-",
             dark: "-"
         },
@@ -2369,7 +2593,7 @@ var personaByLvl =
         level: 62,
         elements: {
             physical: "-",
-            fire: "Ab",
+            fire: "Dr",
             ice: "-",
             electric: "Wk",
             wind: "-",
@@ -2388,10 +2612,10 @@ var personaByLvl =
         elements: {
             physical: "-",
             fire: "Wk",
-            ice: "Ab",
-            electric: "Nu",
+            ice: "Dr",
+            electric: "Nul",
             wind: "-",
-            light: "Nu",
+            light: "Nul",
             dark: "-"
         },
         skills: "Bufudyne, Deathbound, High Counter, Auto-Sukukaja(64), Amrita(66), Ice Amp(67), Mabufudyne(68)",
@@ -2405,16 +2629,33 @@ var personaByLvl =
         level: 62,
         elements: {
             physical: "-",
-            fire: "Ab",
+            fire: "Dr",
             ice: "-",
             electric: "-",
-            wind: "Rs",
+            wind: "Str",
             light: "Wk",
             dark: "Rf"
         },
         skills: "Agidyne, Blight, Power Charge(63), Makarakarn(64), Absorb Physical(66), Fire Amp(67)",
         inherit: "Fire",
         notes: "-"
+    },
+    {
+        arcana: Arcana.Jester,
+        name: "Chernobog",
+        level: 62,
+        elements: {
+            physical: "Str",
+            fire: "-",
+            ice: "-",
+            electric: "-",
+            wind: "Wk",
+            light: "-",
+            dark: "Nul"
+        },
+        skills: "",
+        inherit: "",
+        notes: ""
     },
     {
         arcana: Arcana.Hermit,
@@ -2426,9 +2667,9 @@ var personaByLvl =
             fire: "Rf",
             ice: "-",
             electric: "Wk",
-            wind: "Rs",
+            wind: "Str",
             light: "Wk",
-            dark: "Nu"
+            dark: "Nul"
         },
         skills: "Mamudoon, Agidyne, Dekaja, Mind Charge(65), Mudo Boost(67), Null Light(69), Spell Master(70)",
         inherit: "Bad Stat",
@@ -2440,9 +2681,9 @@ var personaByLvl =
         name: "Siegfried",
         level: 63,
         elements: {
-            physical: "Nu",
+            physical: "Nul",
             fire: "-",
-            ice: "Rs",
+            ice: "Str",
             electric: "-",
             wind: "Wk",
             light: "-",
@@ -2460,11 +2701,11 @@ var personaByLvl =
         elements: {
             physical: "-",
             fire: "Wk",
-            ice: "Ab",
+            ice: "Dr",
             electric: "-",
             wind: "-",
             light: "-",
-            dark: "Nu"
+            dark: "Nul"
         },
         skills: "Bufudyne, Rakukaja, Sharp Student, Ice Amp(66), High Counter(67), Mabufudyne(68), Null Fire(69), Niflheim(70)",
         inherit: "Ice",
@@ -2477,8 +2718,8 @@ var personaByLvl =
         level: 64,
         elements: {
             physical: "-",
-            fire: "Rs",
-            ice: "Nu",
+            fire: "Str",
+            ice: "Nul",
             electric: "Wk",
             wind: "-",
             light: "-",
@@ -2497,7 +2738,7 @@ var personaByLvl =
             physical: "-",
             fire: "-",
             ice: "-",
-            electric: "Nu",
+            electric: "Nul",
             wind: "Wk",
             light: "-",
             dark: "-"
@@ -2512,10 +2753,10 @@ var personaByLvl =
         name: "Thor",
         level: 65,
         elements: {
-            physical: "Rs",
+            physical: "Str",
             fire: "-",
             ice: "-",
-            electric: "Ab",
+            electric: "Dr",
             wind: "Wk",
             light: "-",
             dark: "-"
@@ -2534,7 +2775,7 @@ var personaByLvl =
             fire: "Wk",
             ice: "-",
             electric: "-",
-            wind: "Nu",
+            wind: "Nul",
             light: "-",
             dark: "-"
         },
@@ -2542,6 +2783,23 @@ var personaByLvl =
         inherit: "Wind",
         notes: "-"
     },
+    {
+        arcana: Arcana.Aeon,
+        name: "Laksmi",
+        level: 65,
+        elements: {
+            physical: "-",
+            fire: "Wk",
+            ice: "Nul",
+            electric: "-",
+            wind: "-",
+            light: "Nul",
+            dark: "-"
+        },
+        skills: "",
+        inherit: "",
+        notes: ""
+    },     
     {
         arcana: Arcana.Justice,
         name_jp: "メルキセデク",
@@ -2553,7 +2811,7 @@ var personaByLvl =
             ice: "-",
             electric: "-",
             wind: "-",
-            light: "Nu",
+            light: "Nul",
             dark: "Wk"
         },
         skills: "Mediarahan, Hamaon, Akasha Arts, Matarukaja(68), Mahamaon(69), God's Hand(72)",
@@ -2604,11 +2862,11 @@ var personaByLvl =
         elements: {
             physical: "-",
             fire: "-",
-            ice: "Ab",
+            ice: "Dr",
             electric: "Rf",
             wind: "-",
             light: "Rf",
-            dark: "Nu"
+            dark: "Nul"
         },
         skills: "Megidola, Ziodyne, Elec Amp, Masukukaja(68), Cool Breeze(69), Megidolaon(70), Debilitate(73), Heat Riser(74)",
         inherit: "Almighty",
@@ -2659,7 +2917,7 @@ var personaByLvl =
             physical: "-",
             fire: "Wk",
             ice: "-",
-            electric: "Nu",
+            electric: "Nul",
             wind: "-",
             light: "Rf",
             dark: "-"
@@ -2667,6 +2925,23 @@ var personaByLvl =
         skills: "Diarahan, Mahamaon, Magarudyne, Wind Amp(70), Matarukaja(71), Absorb Wind(73)",
         inherit: "Recovery",
         notes: "Magatsu Mandala, Yomotsu Hirasaka"
+    },
+    {
+        arcana: Arcana.Jester,
+        name: "Seiten Taisei",
+        level: 68,
+        elements: {
+            physical: "Str",
+            fire: "Wk",
+            ice: "-",
+            electric: "-",
+            wind: "Str",
+            light: "-",
+            dark: "-"
+        },
+        skills: "",
+        inherit: "",
+        notes: ""
     },
     {
         arcana: Arcana.Magician,
@@ -2678,7 +2953,7 @@ var personaByLvl =
             fire: "Rf",
             ice: "Wk",
             electric: "-",
-            wind: "Nu",
+            wind: "Nul",
             light: "-",
             dark: "-"
         },
@@ -2694,9 +2969,9 @@ var personaByLvl =
         elements: {
             physical: "-",
             fire: "Wk",
-            ice: "Ab",
+            ice: "Dr",
             electric: "-",
-            wind: "Rs",
+            wind: "Str",
             light: "-",
             dark: "-"
         },
@@ -2710,8 +2985,8 @@ var personaByLvl =
         name: "Masakado",
         level: 69,
         elements: {
-            physical: "Nu",
-            fire: "Nu",
+            physical: "Nul",
+            fire: "Nul",
             ice: "-",
             electric: "Wk",
             wind: "-",
@@ -2734,7 +3009,7 @@ var personaByLvl =
             electric: "Rf",
             wind: "Wk",
             light: "-",
-            dark: "Nu"
+            dark: "Nul"
         },
         skills: "Ziodyne, Virus Wave, Mustard Bomb, Silence Boost(71), Dekaja(72), Regenerate 3(73), Maziodyne(76), Repel Elec(77)",
         inherit: "Elec",
@@ -2748,7 +3023,7 @@ var personaByLvl =
         elements: {
             physical: "-",
             fire: "-",
-            ice: "Nu",
+            ice: "Nul",
             electric: "Wk",
             wind: "-",
             light: "-",
@@ -2766,8 +3041,8 @@ var personaByLvl =
         elements: {
             physical: "-",
             fire: "-",
-            ice: "Nu",
-            electric: "Nu",
+            ice: "Nul",
+            electric: "Nul",
             wind: "-",
             light: "-",
             dark: "Wk"
@@ -2785,7 +3060,7 @@ var personaByLvl =
             physical: "-",
             fire: "-",
             ice: "-",
-            electric: "Nu",
+            electric: "Nul",
             wind: "Wk",
             light: "-",
             dark: "-"
@@ -2802,8 +3077,8 @@ var personaByLvl =
         elements: {
             physical: "-",
             fire: "-",
-            ice: "Rs",
-            electric: "Nu",
+            ice: "Str",
+            electric: "Nul",
             wind: "-",
             light: "-",
             dark: "Wk"
@@ -2818,12 +3093,12 @@ var personaByLvl =
         name: "Atavaka",
         level: 72,
         elements: {
-            physical: "Nu",
+            physical: "Nul",
             fire: "-",
             ice: "Wk",
             electric: "-",
             wind: "-",
-            light: "Nu",
+            light: "Nul",
             dark: "-"
         },
         skills: "Mahamaon, Diarahan, Amrita, Brave Blade(76), Megidolaon(77), Mind Charge(78), Arms Master(81)",
@@ -2838,9 +3113,9 @@ var personaByLvl =
         elements: {
             physical: "-",
             fire: "-",
-            ice: "Rs",
+            ice: "Str",
             electric: "Wk",
-            wind: "Ab",
+            wind: "Dr",
             light: "-",
             dark: "-"
         },
@@ -2852,6 +3127,8 @@ var personaByLvl =
         arcana: Arcana.Death,
         name_jp: "アリス",
         name: "Alice",
+        specialFusion: true,
+        fusionRecipeNames: ["Nebiros","Belial"],
         level: 72,
         elements: {
             physical: "-",
@@ -2872,12 +3149,12 @@ var personaByLvl =
         name: "Michael",
         level: 72,
         elements: {
-            physical: "Rs",
-            fire: "Nu",
+            physical: "Str",
+            fire: "Nul",
             ice: "-",
             electric: "-",
             wind: "Wk",
-            light: "Nu",
+            light: "Nul",
             dark: "-"
         },
         skills: "Vorpal Blade, Megidola, Hamaon, Megidolaon(74), Mahamaon(75), Repel Dark(76), Heaven's Blade(79)",
@@ -2895,8 +3172,8 @@ var personaByLvl =
             ice: "Wk",
             electric: "-",
             wind: "-",
-            light: "Nu",
-            dark: "Nu"
+            light: "Nul",
+            dark: "Nul"
         },
         skills: "Vicious Strike, Auto-Maraku, Null Fear, Alertness(74), Tetrakarn(76), Repel Physical(80)",
         inherit: "Phys",
@@ -2910,10 +3187,10 @@ var personaByLvl =
         elements: {
             physical: "-",
             fire: "Wk",
-            ice: "Nu",
+            ice: "Nul",
             electric: "-",
             wind: "-",
-            light: "Nu",
+            light: "Nul",
             dark: "-"
         },
         skills: "Megidolaon, Akasha Arts, Mabufudyne, Regenerate 3(75), God's Hand(76), Power Charge(78), Angelic Grace(79)",
@@ -2929,8 +3206,8 @@ var personaByLvl =
             physical: "-",
             fire: "Wk",
             ice: "-",
-            electric: "Nu",
-            wind: "Ab",
+            electric: "Nul",
+            wind: "Dr",
             light: "-",
             dark: "-"
         },
@@ -2947,7 +3224,7 @@ var personaByLvl =
             physical: "-",
             fire: "-",
             ice: "-",
-            electric: "Ab",
+            electric: "Dr",
             wind: "-",
             light: "Rf",
             dark: "Wk"
@@ -2957,13 +3234,30 @@ var personaByLvl =
         notes: "Unlocked by maxing social link"
     },
     {
+        arcana: Arcana.Aeon,
+        name: "Kaguya",
+        level: 74,
+        elements: {
+            physical: "-",
+            fire: "Wk",
+            ice: "-",
+            electric: "-",
+            wind: "Str",
+            light: "Nul",
+            dark: "Nul"
+        },
+        skills: "",
+        inherit: "",
+        notes: ""
+    },    
+    {
         arcana: Arcana.Tower,
         name_jp: "ヨシツネ",
         name: "Yoshitsune",
         level: 75,
         elements: {
-            physical: "Nu",
-            fire: "Rs",
+            physical: "Nul",
+            fire: "Str",
             ice: "-",
             electric: "Rf",
             wind: "-",
@@ -2981,10 +3275,10 @@ var personaByLvl =
         level: 75,
         elements: {
             physical: "-",
-            fire: "Ab",
+            fire: "Dr",
             ice: "Wk",
             electric: "-",
-            wind: "Nu",
+            wind: "Nul",
             light: "-",
             dark: "-"
         },
@@ -3003,7 +3297,7 @@ var personaByLvl =
             ice: "-",
             electric: "Rf",
             wind: "-",
-            light: "Nu",
+            light: "Nul",
             dark: "-"
         },
         skills: "Ziodyne, Mediarahan, Samarecarm, Maziodyne(78), Mind Charge(79), Elec Amp(80), Spell Master(82), Salvation(83)",
@@ -3036,11 +3330,11 @@ var personaByLvl =
         elements: {
             physical: "-",
             fire: "Wk",
-            ice: "Ab",
+            ice: "Dr",
             electric: "-",
             wind: "-",
             light: "-",
-            dark: "Nu"
+            dark: "Nul"
         },
         skills: "Mabufudyne, Mamudoon, Old One, Tentarafoo(78), Maziodyne(79), Mudo Boost(80), Stagnant Air(82)",
         inherit: "Ice",
@@ -3056,7 +3350,7 @@ var personaByLvl =
             fire: "-",
             ice: "-",
             electric: "Wk",
-            wind: "Ab",
+            wind: "Dr",
             light: "-",
             dark: "-"
         },
@@ -3065,13 +3359,30 @@ var personaByLvl =
         notes: "Yomotsu Hirasaka"
     },
     {
+        arcana: Arcana.Jester,
+        name: "Magatsu-Izanagi",
+        level: 77,
+        elements: {
+            physical: "-",
+            fire: "-",
+            ice: "-",
+            electric: "-",
+            wind: "-",
+            light: "Nul",
+            dark: "Nul"
+        },
+        skills: "",
+        inherit: "",
+        notes: ""
+    },
+    {
         arcana: Arcana.Magician,
         name_jp: "マダ",
         name: "Mada",
         level: 78,
         elements: {
             physical: "-",
-            fire: "Ab",
+            fire: "Dr",
             ice: "Wk",
             electric: "-",
             wind: "-",
@@ -3089,12 +3400,12 @@ var personaByLvl =
         level: 78,
         elements: {
             physical: "-",
-            fire: "Ab",
+            fire: "Dr",
             ice: "-",
             electric: "Rf",
             wind: "-",
             light: "-",
-            dark: "Nu"
+            dark: "Nul"
         },
         skills: "Agidyne, Myriad Arrows, Power Charge, Mind Charge(80), Maragidyne(82), Mamudoon(83), Fire Amp(84), Mudo Boost(85)",
         inherit: "Phys",
@@ -3108,9 +3419,9 @@ var personaByLvl =
         elements: {
             physical: "-",
             fire: "Wk",
-            ice: "Ab",
+            ice: "Dr",
             electric: "-",
-            wind: "Nu",
+            wind: "Nul",
             light: "-",
             dark: "-"
         },
@@ -3142,7 +3453,7 @@ var personaByLvl =
         name: "Futsunushi",
         level: 80,
         elements: {
-            physical: "Nu",
+            physical: "Nul",
             fire: "-",
             ice: "-",
             electric: "-",
@@ -3158,11 +3469,12 @@ var personaByLvl =
         arcana: Arcana.Tower,
         name_jp: "シヴァ",
         name: "Shiva",
+        specialFusion: true,
         level: 80,
         elements: {
             physical: "-",
             fire: "-",
-            ice: "Ab",
+            ice: "Dr",
             electric: "Rf",
             wind: "-",
             light: "-",
@@ -3176,11 +3488,13 @@ var personaByLvl =
         arcana: Arcana.Devil,
         name_jp: "ベルゼブブ",
         name: "Beelzebub",
+        specialFusion: true,
+        fusionRecipeNames: ["Belial", "Belphegor", "Baal Zebul", "Seth", "Mot", "Pazuzu"],
         level: 81,
         elements: {
             physical: "-",
-            fire: "Ab",
-            ice: "Nu",
+            fire: "Dr",
+            ice: "Nul",
             electric: "Rf",
             wind: "-",
             light: "Wk",
@@ -3199,10 +3513,10 @@ var personaByLvl =
             physical: "-",
             fire: "-",
             ice: "-",
-            electric: "Nu",
-            wind: "Ab",
+            electric: "Nul",
+            wind: "Dr",
             light: "Wk",
-            dark: "Nu"
+            dark: "Nul"
         },
         skills: "Foolish Whisper, Ziodyne, Masukukaja, Ailment Boost(84), Elec Amp(85), Revolution(86), Firm Stance(87)",
         inherit: "Phys",
@@ -3215,7 +3529,7 @@ var personaByLvl =
         level: 82,
         elements: {
             physical: "-",
-            fire: "Nu",
+            fire: "Nul",
             ice: "-",
             electric: "-",
             wind: "Rf",
@@ -3233,7 +3547,7 @@ var personaByLvl =
         level: 83,
         elements: {
             physical: "-",
-            fire: "Nu",
+            fire: "Nul",
             ice: "-",
             electric: "-",
             wind: "-",
@@ -3254,7 +3568,7 @@ var personaByLvl =
             fire: "-",
             ice: "-",
             electric: "-",
-            wind: "Nu",
+            wind: "Nul",
             light: "Rf",
             dark: "Wk"
         },
@@ -3269,11 +3583,11 @@ var personaByLvl =
         level: 86,
         elements: {
             physical: "-",
-            fire: "Nu",
-            ice: "Rs",
+            fire: "Nul",
+            ice: "Str",
             electric: "-",
             wind: "Wk",
-            light: "Nu",
+            light: "Nul",
             dark: "-"
         },
         skills: "Maragidyne, Primal Force, Marakukaja, Mahamaon(88), High Counter(89), Spell Master(90), Unshaken Will(92)",
@@ -3286,13 +3600,13 @@ var personaByLvl =
         name: "Helel",
         level: 87,
         elements: {
-            physical: "Rs",
-            fire: "Nu",
+            physical: "Str",
+            fire: "Nul",
             ice: "-",
             electric: "-",
             wind: "Wk",
-            light: "Nu",
-            dark: "Nu"
+            light: "Nul",
+            dark: "Nul"
         },
         skills: "Megidolaon, Maragidyne, God's Hand, Salvation(88), Insta-Heal(90), Repel Wind(91), Arms Master(92), Morning Star(94)",
         inherit: "Almighty",
@@ -3320,12 +3634,14 @@ var personaByLvl =
         arcana: Arcana.Judgement,
         name_jp: "アルダー",
         name: "Ardha",
+        specialFusion: true,
+        fusionRecipeNames: ["Parvati","Shiva"],
         level: 90,
         elements: {
-            physical: "Rs",
+            physical: "Str",
             fire: "-",
-            ice: "Nu",
-            electric: "Nu",
+            ice: "Nul",
+            electric: "Nul",
             wind: "-",
             light: "-",
             dark: "-"
@@ -3338,13 +3654,14 @@ var personaByLvl =
         arcana: Arcana.World,
         name_jp: "伊邪那岐大神",
         name: "Izanagi-no-Okami",
+        specialFusion: true,
         level: 91,
         elements: {
-            physical: "Rs",
-            fire: "Rs",
-            ice: "Rs",
-            electric: "Rs",
-            wind: "Rs",
+            physical: "Str",
+            fire: "Str",
+            ice: "Str",
+            electric: "Str",
+            wind: "Str",
             light: "-",
             dark: "-"
         },
@@ -3358,13 +3675,13 @@ var personaByLvl =
         name: "Lucifer",
         level: 93,
         elements: {
-            physical: "Rs",
+            physical: "Str",
             fire: "-",
             ice: "-",
             electric: "-",
             wind: "-",
             light: "Wk",
-            dark: "Nu"
+            dark: "Nul"
         },
         skills: "Bufudyne, Brave Blade, Mind Charge, Ice Amp(94), Spell Master(95), Repel Light(96), Absorb Elec(98), Victory Cry(99)",
         inherit: "Ice",
