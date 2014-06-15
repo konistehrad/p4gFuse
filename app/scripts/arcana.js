@@ -1,7 +1,7 @@
-
+'use strict';
 
 // crude Arcana enum
-var Fool = 0
+var Fool = 0,
 	Magician =1,
 	Priestess =2,
 	Empress =3,
@@ -25,12 +25,12 @@ var Fool = 0
 	Jester =21,
 	Aeon =22;
 
-NumArcana = Aeon + 1;
+var NumArcana = Aeon + 1;
 
 function InitializeSpread() {
 	var result = new Array(NumArcana);
 	for( var i = 0; i < NumArcana; ++i ) {
-		arr[i] = new Array(NumArcana);
+		result[i] = new Array(NumArcana);
 	}
 	return result;
 }
@@ -39,8 +39,8 @@ function GetResult( spread, first, second ) {
 	return spread[first][second];
 }
 
-NormalSpread = InitializeSpread();
-TriangleSpread = InitializeSpread();
+var NormalSpread = InitializeSpread();
+var TriangleSpread = InitializeSpread();
 
 
 function GetNormalResult( first, second ) {
@@ -143,7 +143,7 @@ AddNormalSpreads( Priestess,
 	Emperor, Empress,
 	Hierophant, Sun,
 	Lovers, Emperor,
-	Chaiot, Hierophant,
+	Chariot, Hierophant,
 	Justice, Hermit,
 	Hermit, Death,
 	Fortune, HangedMan,
@@ -501,7 +501,7 @@ AddTriangleSpreads( Sun,
 	Devil, Lovers,
 	Tower, Death,
 	Star, Chariot,
-	Moon, Death,
+	Moon, Death
 );
 
 AddTriangleSpreads( Moon,

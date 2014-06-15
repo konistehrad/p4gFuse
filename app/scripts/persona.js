@@ -1,3 +1,6 @@
+'use strict';
+
+
 var Arcana = require("./arcana");
 
 var personaByLvl = 
@@ -3331,6 +3334,7 @@ var personaByLvl =
         inherit: "Almighty",
         notes: "-"
     },
+    /*
     {
         arcana: Arcana.World,
         name_jp: "伊邪那岐大神",
@@ -3348,7 +3352,7 @@ var personaByLvl =
         skills: "Megidolaon, Victory Cry, Angelic Grace, Mind Charge, Agidyne(92), Bufudyne(93), Ziodyne(94), Garudyne(95), Fire Amp(96), Ice Amp(97), Elec Amp(98), Wind Amp(99)",
         inherit: "Null",
         notes: "Only in New Game+ with data from True Ending"
-    },
+    },*/
     {
         arcana: Arcana.Judgement,
         name_jp: "ルシファー",
@@ -3369,6 +3373,7 @@ var personaByLvl =
     }];
 
 var personaByArcana = [];
+var personaByName = {};
 for (var i = 0; i < Arcana.Count; i++) {
     personaByArcana.push([]);
 };
@@ -3376,4 +3381,11 @@ for (var i = 0; i < Arcana.Count; i++) {
 for (var i = 0; i < personaByLvl.length; i++) {
     var persona = personaByLvl[i];
     personaByArcana[persona.arcana].push(persona);
+    personaByName[persona.name] = persona;
 };
+
+module.exports = {
+    ByLevel: personaByLvl,
+    ByArcana: personaByArcana,
+    ByName: personaByName
+}
