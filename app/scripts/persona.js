@@ -3751,7 +3751,7 @@ function convertFromNameList( nameList ) {
     return result;
 }
 
-function BackCalc( persona ) {
+function BackCalcNormal( persona ) {
     // damn special persona think they own the place!
     if( persona.fusionRecipeNames )
         return convertFromNameList(persona.fusionRecipeNames);
@@ -3779,19 +3779,27 @@ function BackCalc( persona ) {
                 }
             }
         }
-    } else {
-        // ok, we're Jester or Aeon ...
-        var triangles = Arcana.BackCalcTriangle( arcana );
-        console.log( "Trying to brute force through " + triangles.length + " combinations ...");
-        for (var triangleIdx = 0; triangleIdx < triangles.length; triangleIdx++) {
-            var triangle = triangles[triangleIdx];
-            var firstArcana = triangle[0], secondArcana = triangle[1], thirdArcana = triangle[2];
-            var firstPersonas = personaByArcana[firstArcana], secondPersonas = personaByArcana[secondArcana], thirdPersonas = personaByArcana[thirdArcana];
-            for (var i = 0; i < firstPersonas.length; i++) {
-                for (var j = 0; j < secondPersonas.length; j++) {
-                    for (var k = 0; k < thirdPersonas.length; k++) {
-                        var first = firstPersonas[i], second = secondPersonas[j], third = thirdPersonas[k];
+    } 
+
+    return result;
+}
+
+function BackCalcTriangle( persona, including ) {
+    var result = [];
+    var triangles = Arcana.BackCalcTriangle( arcana );
+    var arcana = persona.arcana;
+    console.log( "Trying to brute force through " + triangles.length + " combinations ...");
+    for (var triangleIdx = 0; triangleIdx < triangles.length; triangleIdx++) {
+        var triangle = triangles[triangleIdx];
+        var firstArcana = triangle[0], secondArcana = triangle[1], thirdArcana = triangle[2];
+        var firstPersonas = personaByArcana[firstArcana], secondPersonas = personaByArcana[secondArcana], thirdPersonas = personaByArcana[thirdArcana];
+        for (var i = 0; i < firstPersonas.length; i++) {
+            for (var j = 0; j < secondPersonas.length; j++) {
+                for (var k = 0; k < thirdPersonas.length; k++) {
+                    var first = firstPersonas[i], second = secondPersonas[j], third = thirdPersonas[k];
+                    if( !including || first == including || second == including || third == including ) {
                         var level = getTriangleLevel(first,second,third);
+                        // We have to be lte to get this fusion; punt
                         if( level > persona.level )
                             continue;
 
@@ -3799,11 +3807,11 @@ function BackCalc( persona ) {
                             result.push([first,second,third]);
                         }
                     }
+                    
                 }
             }
         }
     }
-
     return result;
 }
 
@@ -3813,5 +3821,7 @@ module.exports = {
     ByName: personaByName,
     NormalCalculation: NormalCalculation,
     TriangleCalculation: TriangleCalculation,
-    BackCalc: BackCalc
+    BackCalc: BackCalcNormal,
+    BackCalcNormal: BackCalcNormal,
+    BackCalcTriangle: BackCalcTriangle
 }
