@@ -3754,7 +3754,7 @@ function convertFromNameList( nameList ) {
 function BackCalcNormal( persona, including ) {
     // damn special persona think they own the place!
     if( persona.fusionRecipeNames )
-        return convertFromNameList(persona.fusionRecipeNames);
+        return [convertFromNameList(persona.fusionRecipeNames)];
 
     var result = [];
     var arcana = persona.arcana;
