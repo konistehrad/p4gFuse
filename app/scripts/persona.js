@@ -3751,7 +3751,7 @@ function convertFromNameList( nameList ) {
     return result;
 }
 
-function BackCalcNormal( persona ) {
+function BackCalcNormal( persona, including ) {
     // damn special persona think they own the place!
     if( persona.fusionRecipeNames )
         return convertFromNameList(persona.fusionRecipeNames);
@@ -3772,8 +3772,10 @@ function BackCalcNormal( persona ) {
                 for (var i = 0; i < firstList.length; i++) {
                     for (var j = 0; j < secondList.length; j++) {
                         var firstPersona = firstList[i], secondPersona = secondList[j];
-                        if( NormalCalculation(firstPersona, secondPersona) == persona ) {
-                            result.push([firstPersona, secondPersona]);
+                        if( !including || firstPersona == including || secondPersona == including ) {
+                            if( NormalCalculation(firstPersona, secondPersona) == persona ) {
+                                result.push([firstPersona, secondPersona]);
+                            }
                         }
                     }
                 }
