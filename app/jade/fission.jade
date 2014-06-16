@@ -1,0 +1,32 @@
+doctype html
+html.no-js(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    title Foundation
+    link(rel='stylesheet', href='styles/app.css')
+    script(src='bower_components/modernizr/modernizr.js')
+  body
+    .row
+      .large-12.column
+        h1 Persona Fission
+    .row
+      .large-12.column
+        form
+          .row
+            .large-2.medium-2.column
+              label(for="trinaryFission") Triangle?
+              input#trinaryFission(type='checkbox')
+            .large-5.medium-5.column
+              label Fissible
+              select.persona#fissible
+            .large-5.medium-5.column
+              label Containing
+              select.persona#containing
+    .row#results
+
+    //- Scripts
+    //- ==========================================
+    // script(src='scripts/app.js')
+    script(src='scripts/vendor.js')
+    script(src='scripts/main.js')

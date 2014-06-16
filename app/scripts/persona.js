@@ -3815,6 +3815,10 @@ function BackCalcTriangle( persona, including ) {
     return result;
 }
 
+function ToString(persona) {
+    return persona.name + " ("+Arcana.ToString(persona.arcana)+", " +persona.level+")";
+}
+
 module.exports = {
     ByLevel: personaByLvl,
     ByArcana: personaByArcana,
@@ -3823,5 +3827,6 @@ module.exports = {
     TriangleCalculation: TriangleCalculation,
     BackCalc: BackCalcNormal,
     BackCalcNormal: BackCalcNormal,
-    BackCalcTriangle: BackCalcTriangle
+    BackCalcTriangle: BackCalcTriangle,
+    ToString: ToString
 }
