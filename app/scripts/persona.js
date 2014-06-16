@@ -3730,11 +3730,15 @@ function NormalCalculation( first, second ) {
     return findPersonaByLevel(arcana, level);
 }
 
+function getTriangleLevel(first,second,third) {
+    return ((first.level + second.level + third.level) / 3 ) + 5;
+}
+
 function TriangleCalculation(first,second,third) {
     var args = Array.prototype.slice.call(arguments);
     args.sort(comparePersona);
 
-    var level = ((first.level + second.level + third.level) / 3 ) + 5;
+    var level = getTriangleLevel(first,second,third);
     var arcana = Arcana.GetTriangleResult( args[0].arcana, args[1].arcana, args[2].arcana );
     return findPersonaByLevel(arcana, level);
 }
@@ -3777,12 +3781,23 @@ function BackCalc( persona ) {
         }
     } else {
         // ok, we're Jester or Aeon ...
-        for (var i = 0; i < personaByLvl.length; i++) {
-            for (var j = 0; j < personaByLvl.length; j++) {
-                for (var k = 0; k < personaByLvl.length; k++) {
-                    var first = personaByLvl[i], second = personaByLvl[j], third = personaByLvl[k];
-                    if( TriangleCalculation(first,second,third) == persona ) {
-                        result.push([first,second,third]);
+        var triangles = Arcana.BackCalcTriangle( arcana );
+        console.log( "Trying to brute force through " + triangles.length + " combinations ...");
+        for (var triangleIdx = 0; triangleIdx < triangles.length; triangleIdx++) {
+            var triangle = triangles[triangleIdx];
+            var firstArcana = triangle[0], secondArcana = triangle[1], thirdArcana = triangle[2];
+            var firstPersonas = personaByArcana[firstArcana], secondPersonas = personaByArcana[secondArcana], thirdPersonas = personaByArcana[thirdArcana];
+            for (var i = 0; i < firstPersonas.length; i++) {
+                for (var j = 0; j < secondPersonas.length; j++) {
+                    for (var k = 0; k < thirdPersonas.length; k++) {
+                        var first = firstPersonas[i], second = secondPersonas[j], third = thirdPersonas[k];
+                        var level = getTriangleLevel(first,second,third);
+                        if( level > persona.level )
+                            continue;
+
+                        if( TriangleCalculation(first,second,third) == persona ) {
+                            result.push([first,second,third]);
+                        }
                     }
                 }
             }
