@@ -27,18 +27,18 @@ function drawIndividual(result) {
 }
 
 function drawResults(resultsArray) {
-    var $results = $("#results").empty();
+    var $results = $("#results tbody").empty();
     for (var i = 0; !!resultsArray && i < resultsArray.length; i++) {
         var result = resultsArray[i];
-        var $row = $("<div class='row'></div>");
+        var $row = $("<tr></tr>");
 
         if( result.length === 2 ) {
-            $row.append($("<div class='column small-5 persona-augend'></div>").text(Persona.ToString(result[0]) + " x "));
-            $row.append($("<div class='column small-5 persona-addend'></div>").text(Persona.ToString(result[1])));
+            $row.append($("<td></td>").text(Persona.ToString(result[0])));
+            $row.append($("<td></td>").text(Persona.ToString(result[1])));
         } else if( result.length === 3 ) {
-            $row.append($("<div class='column small-4 persona-augend'></div>").text(Persona.ToString(result[0]) + " x "));
-            $row.append($("<div class='column small-4 persona-middle'></div>").text(Persona.ToString(result[1]) + " x "));
-            $row.append($("<div class='column small-4 persona-addend'></div>").text(Persona.ToString(result[2])));
+            $row.append($("<td></td>").text(Persona.ToString(result[0])));
+            $row.append($("<td></td>").text(Persona.ToString(result[1])));
+            $row.append($("<td></td>").text(Persona.ToString(result[2])));
         }
         $results.append($row);
     };
