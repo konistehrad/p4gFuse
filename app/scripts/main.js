@@ -65,16 +65,21 @@ function recalculateFusion() {
 
 function recalculateFission() {
     var results = [];
+    var containingPersona = undefined;
     var fissibleName = $("#fissible").val();
+    var containingName = $("#containing").val();
+    if(!!containingName) {
+        containingPersona = Persona.ByName[containingName];
+    }
+
     if( !!fissibleName ) {
         var fissiblePersona = Persona.ByName[fissibleName];
         if( triangle ) {
-            var containingName = $("#containing").val();
-            if(!!containingName) {
-                results = Persona.BackCalcTriangle(fissiblePersona,Persona.ByName[containingName]);
+            if( !!containingPersona ) {
+                results = Persona.BackCalcTriangle(fissiblePersona,containingPersona);
             }
         } else {    
-            results = Persona.BackCalcNormal(fissiblePersona);
+            results = Persona.BackCalcNormal(fissiblePersona,containingPersona);
         }
     }
 
@@ -102,9 +107,9 @@ $(function(){
     $("#trinaryFission").change(function(){
         triangle = this.checked;
         if(triangle) {
-            $("#containing").val("").parent().show();
+            $("#containing").val("");
         } else {
-            $("#containing").val("").parent().hide();
+            $("#containing").val("");
         }
         recalculateFission();
     });
@@ -112,5 +117,5 @@ $(function(){
     $("#firstFusion, #secondFusion, #thirdFusion").change(recalculateFusion);
     $("#fissible, #containing").change(recalculateFission);
 
-    $("#thirdFusion, #containing").parent().hide();
+    $("#thirdFusion").parent().hide();
 });
