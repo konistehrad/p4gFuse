@@ -44,7 +44,7 @@ var personaByLvl =
         arcana: Arcana.Chariot,
         name_jp: "スライム",
         name: "Slime",
-        specialFusion: true,
+        fusionRecipeNames: ["Eligor", "Nata Taishi"],
         level: 2,
         elements: {
             physical: "Str",
@@ -63,7 +63,7 @@ var personaByLvl =
         arcana: Arcana.Devil,
         name_jp: "ウコバク",
         name: "Ukobach",
-        specialFusion: true,
+        fusionRecipeNames: ["Lilim", "Vetala"],
         level: 3,
         elements: {
             physical: "-",
@@ -1229,6 +1229,7 @@ var personaByLvl =
         arcana: Arcana.Star,
         name_jp: "ネコショウグン",
         name: "Neko Shogun",
+        fusionRecipeNames: ["Saki Mitama", "Ara Mitama", "Kusi Mitama", "Nigi Mitama"],
         level: 32,
         elements: {
             physical: "Str",
@@ -1497,7 +1498,7 @@ var personaByLvl =
         arcana: Arcana.Fool,
         name_jp: "ジャアクフロスト",
         name: "Black Frost",
-        specialFusion: true,
+        fusionRecipeNames: ["Jack Frost","Pyro Jack","King Frost","Pixie","Ghoul"],
         level: 38,
         elements: {
             physical: "-",
@@ -2053,6 +2054,7 @@ var personaByLvl =
         arcana: Arcana.HangedMan,
         name_jp: "ヤツフサ",
         name: "Yatsufusa",
+        fusionRecipeNames: ["Makami", "Orthrus", "Mothman", "Thoth", "Narasimha"],
         level: 49,
         elements: {
             physical: "-",
@@ -2232,6 +2234,7 @@ var personaByLvl =
         arcana: Arcana.Sun,
         name_jp: "タムリン",
         name: "Tam Lin",
+        fusionRecipeNames: ["Phoenix", "Gdon", "Yatagarasu", "Narasimha"],
         level: 53,
         elements: {
             physical: "Str",
@@ -2858,6 +2861,7 @@ var personaByLvl =
         arcana: Arcana.Judgement,
         name_jp: "トランペッター",
         name: "Trumpeter",
+        fusionRecipeNames: ["Matador", "White Rider", "Daisoujou", "Tao Tie", "Pabilsag", "Taowu"],
         level: 67,
         elements: {
             physical: "-",
@@ -3109,6 +3113,7 @@ var personaByLvl =
         arcana: Arcana.Fortune,
         name_jp: "ノルン",
         name: "Norn",
+        fusionRecipeNames: ["Atropos", "Lachesis", "Clotho"],
         level: 72,
         elements: {
             physical: "-",
@@ -3127,7 +3132,6 @@ var personaByLvl =
         arcana: Arcana.Death,
         name_jp: "アリス",
         name: "Alice",
-        specialFusion: true,
         fusionRecipeNames: ["Nebiros","Belial"],
         level: 72,
         elements: {
@@ -3254,6 +3258,7 @@ var personaByLvl =
         arcana: Arcana.Tower,
         name_jp: "ヨシツネ",
         name: "Yoshitsune",
+        fusionRecipeNames: ["Masakado", "Shiki-Ouji", "Oukuninushi", "Hachiman", "Hitokoto-Nushi"],
         level: 75,
         elements: {
             physical: "Nul",
@@ -3290,6 +3295,7 @@ var personaByLvl =
         arcana: Arcana.Hierophant,
         name_jp: "コウリュウ",
         name: "Kohryu",
+        fusionRecipeNames: ["Genbu","Seiryu","Suzaku","Byakko"],
         level: 76,
         elements: {
             physical: "-",
@@ -3397,6 +3403,7 @@ var personaByLvl =
         arcana: Arcana.Death,
         name_jp: "マハカーラ",
         name: "Mahakala",
+        fusionRecipeNames: ["Matador","White Rider","Mother Harlot","Daisoujou","Hell Biker","Trumpeter"],
         level: 78,
         elements: {
             physical: "-",
@@ -3451,6 +3458,7 @@ var personaByLvl =
         arcana: Arcana.Chariot,
         name_jp: "フツヌシ",
         name: "Futsunushi",
+        fusionRecipeNames: ["Ares","Triglav","Kin-ki","Atavaka","Neko Shogun"],
         level: 80,
         elements: {
             physical: "Nul",
@@ -3469,7 +3477,7 @@ var personaByLvl =
         arcana: Arcana.Tower,
         name_jp: "シヴァ",
         name: "Shiva",
-        specialFusion: true,
+        fusionRecipeNames: ["Rangda","Barong"],
         level: 80,
         elements: {
             physical: "-",
@@ -3488,7 +3496,6 @@ var personaByLvl =
         arcana: Arcana.Devil,
         name_jp: "ベルゼブブ",
         name: "Beelzebub",
-        specialFusion: true,
         fusionRecipeNames: ["Belial", "Belphegor", "Baal Zebul", "Seth", "Mot", "Pazuzu"],
         level: 81,
         elements: {
@@ -3508,6 +3515,7 @@ var personaByLvl =
         arcana: Arcana.Hermit,
         name_jp: "オンギョウキ",
         name: "Ongyo-ki",
+        fusionRecipeNames: ["Oni", "Fuu-ki", "Kin-ki", "Sui-ki"],
         level: 82,
         elements: {
             physical: "-",
@@ -3634,7 +3642,6 @@ var personaByLvl =
         arcana: Arcana.Judgement,
         name_jp: "アルダー",
         name: "Ardha",
-        specialFusion: true,
         fusionRecipeNames: ["Parvati","Shiva"],
         level: 90,
         elements: {
@@ -3654,7 +3661,7 @@ var personaByLvl =
         arcana: Arcana.World,
         name_jp: "伊邪那岐大神",
         name: "Izanagi-no-Okami",
-        specialFusion: true,
+        fusionRecipeNames: ["Izanagi", "Sandman", "Nata Taishi", "Girimehkala", "Norn", "Oukuninushi", "Orthrus", "Kartikeya", "Mithra", "Tzitzimitl", "Cu Chulainn", "Legion"],
         level: 91,
         elements: {
             physical: "Str",
@@ -3673,6 +3680,7 @@ var personaByLvl =
         arcana: Arcana.Judgement,
         name_jp: "ルシファー",
         name: "Lucifer",
+        fusionRecipeNames: ["Ananta","Anubis","Trumpeter","Michael","Satan","Metatron"],
         level: 93,
         elements: {
             physical: "Str",
@@ -3787,6 +3795,10 @@ function BackCalcNormal( persona, including ) {
 }
 
 function BackCalcTriangle( persona, including ) {
+    // damn special persona think they own the place!
+    if( persona.fusionRecipeNames )
+        return [convertFromNameList(persona.fusionRecipeNames)];
+
     var result = [];
     var triangles = Arcana.BackCalcTriangle( arcana );
     var arcana = persona.arcana;
