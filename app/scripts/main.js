@@ -31,14 +31,9 @@ function drawResults(resultsArray) {
     for (var i = 0; !!resultsArray && i < resultsArray.length; i++) {
         var result = resultsArray[i];
         var $row = $("<tr></tr>");
+        for( var j = 0; j < result.length; ++j ) {
+            $row.append($("<td></td>").text(Persona.ToString(result[j])));
 
-        if( result.length === 2 ) {
-            $row.append($("<td></td>").text(Persona.ToString(result[0])));
-            $row.append($("<td></td>").text(Persona.ToString(result[1])));
-        } else if( result.length === 3 ) {
-            $row.append($("<td></td>").text(Persona.ToString(result[0])));
-            $row.append($("<td></td>").text(Persona.ToString(result[1])));
-            $row.append($("<td></td>").text(Persona.ToString(result[2])));
         }
         $results.append($row);
     };
