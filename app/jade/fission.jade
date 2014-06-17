@@ -6,7 +6,7 @@ html.no-js(lang='en')
     title Foundation
     link(rel='stylesheet', href='styles/app.css')
     script(src='bower_components/modernizr/modernizr.js')
-  body
+  body.fission
     .row
       .large-12.column
         h1 Persona Fission
@@ -21,16 +21,13 @@ html.no-js(lang='en')
               label Fissible
               select.persona#fissible
             .large-5.medium-5.column
-              label Containing
+              label Containing (Optional for Normal)
               select.persona#containing
     .row
-      .large-12.column                
-        table#results
-          tbody
+      .large-12.column#results
 
 
     //- Scripts
     //- ==========================================
-    // script(src='scripts/app.js')
     script(src='scripts/vendor.js')
     script(src='scripts/main.js')

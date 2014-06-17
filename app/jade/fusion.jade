@@ -6,7 +6,7 @@ html.no-js(lang='en')
     title Foundation
     link(rel='stylesheet', href='styles/app.css')
     script(src='bower_components/modernizr/modernizr.js')
-  body
+  body.fusion
     .row
       .large-12.column
         h1 Persona Fusion
@@ -14,9 +14,6 @@ html.no-js(lang='en')
       .large-12.column
         form
           .row
-            .large-12.column
-              label(for="trinaryFusion") Triangle?
-              input#trinaryFusion(type='checkbox')
             .large-4.medium-4.column
               label First
               select.persona#firstFusion
@@ -24,13 +21,12 @@ html.no-js(lang='en')
               label Second
               select.persona#secondFusion
             .large-4.medium-4.column
-              label Third
+              label Third (Optional)
               select.persona#thirdFusion
     .row#results
 
 
     //- Scripts
     //- ==========================================
-    // script(src='scripts/app.js')
     script(src='scripts/vendor.js')
     script(src='scripts/main.js')

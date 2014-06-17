@@ -22,17 +22,17 @@ var personaNamesInOrder = sortedByNamePersona.map(function(persona){ return pers
 function drawIndividual(result) {
     var $results = $("#results").empty();
     if( !!result ) {
-        $results.append($("<div class='column'></div>").text(result.name));
+        $results.append($("<div class='column'></div>").text(Persona.ToString(result)));
     }
 }
 
 function drawResults(resultsArray) {
-    var $results = $("#results tbody").empty();
+    var $results = $("#results").empty();
     for (var i = 0; !!resultsArray && i < resultsArray.length; i++) {
         var result = resultsArray[i];
-        var $row = $("<tr></tr>");
+        var $row = $("<ul></ul>").addClass('small-block-grid-'+result.length);
         for( var j = 0; j < result.length; ++j ) {
-            $row.append($("<td></td>").text(Persona.ToString(result[j])));
+            $row.append($("<li></li>").text(Persona.ToString(result[j])));
 
         }
         $results.append($row);
@@ -44,17 +44,15 @@ function recalculateFusion() {
     var result = null;
     var firstName = $("#firstFusion").val();
     var secondName = $("#secondFusion").val();
+    var thirdName = $("#thirdFusion").val();
 
     if( !!firstName && !!secondName ) {
         var firstPersona = Persona.ByName[firstName];
         var secondPersona = Persona.ByName[secondName];
+        var triangle = !!thirdName;
 
         if( triangle ) {
-            var thirdName = $("#thirdFusion").val();
-            if( !!thirdName ) {
-                result = Persona.TriangleCalculation(firstPersona,secondPersona,Persona.ByName[thirdName]);
-            }
-            
+            result = Persona.TriangleCalculation(firstPersona,secondPersona,Persona.ByName[thirdName]);
         } else {
             result = Persona.NormalCalculation(firstPersona,secondPersona);
         }
@@ -90,32 +88,16 @@ $(function(){
     var $selects = $("select.persona");
     $selects.empty();
     $selects.append($("<option></option>"));
-    $.each(personaNamesInOrder, function(i,e) {
-        $selects.append($("<option>"+e+"</option>"));
-    });
-
-    $("#trinaryFusion").prop("checked",false).change(function(){
-        triangle = this.checked;
-        if(triangle) {
-            $("#thirdFusion").val("").parent().show();
-        } else {
-            $("#thirdFusion").val("").parent().hide();
-        }
-        recalculateFusion();
+    $.each(sortedByNamePersona, function(i,e) {
+        $selects.append($("<option>"+Persona.ToString(e)+"</option>").val(e.name));
     });
 
     $("#trinaryFission").change(function(){
         triangle = this.checked;
-        if(triangle) {
-            $("#containing").val("");
-        } else {
-            $("#containing").val("");
-        }
+        $("#containing").val("");
         recalculateFission();
     });
 
     $("#firstFusion, #secondFusion, #thirdFusion").change(recalculateFusion);
     $("#fissible, #containing").change(recalculateFission);
-
-    $("#thirdFusion").parent().hide();
 });
