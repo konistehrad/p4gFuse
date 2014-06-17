@@ -21,9 +21,11 @@ var personaNamesInOrder = sortedByNamePersona.map(function(persona){ return pers
 
 function drawIndividual(result) {
     var $results = $("#results").empty();
+    var resultText = "No results found";
     if( !!result ) {
-        $results.append($("<div class='column'></div>").text(Persona.ToString(result)));
+        resultText = Persona.ToString(result);
     }
+    $results.append($("<div class='column'></div>").text(resultText));
 }
 
 function drawResults(resultsArray) {
