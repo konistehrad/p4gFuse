@@ -7,25 +7,30 @@ html.no-js(lang='en')
     link(rel='stylesheet', href='styles/app.css')
     script(src='bower_components/modernizr/modernizr.js')
   body.fission
-    .row
-      .large-12.column
-        h1 Persona Fission
-    .row
-      .large-12.column
-        form
-          .row
-            .large-2.medium-2.column
-              label(for="trinaryFission") Triangle?
-              input#trinaryFission(type='checkbox')
-            .large-5.medium-5.column
-              label Fissible
-              select.persona#fissible
-            .large-5.medium-5.column
-              label Containing (Optional for Normal)
-              select.persona#containing
-    .row
-      .large-12.column#results
+    #content
+      .row
+        .large-12.column
+          h1
+            a(href="index.html").back &#8592; 
+            | Persona Fusion
+      .row
+        .large-12.column
+          form
+            .row
+              .large-2.medium-2.column
+                label(for="trinaryFission") Triangle?
+                input#trinaryFission(type='checkbox')
+              .large-5.medium-5.column
+                label Fissible
+                select.persona#fissible
+              .large-5.medium-5.column
+                label Containing (Optional for Normal)
+                select.persona#containing
+      .row
+        .large-12.column#results
 
+
+      include footer
 
     //- Scripts
     //- ==========================================

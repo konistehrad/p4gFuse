@@ -3,29 +3,34 @@ html.no-js(lang='en')
   head
     meta(charset='utf-8')
     meta(name="viewport", content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0")
-    title Fusion Calculator 
+    title Fusion Calculator
     link(rel='stylesheet', href='styles/app.css')
     script(src='bower_components/modernizr/modernizr.js')
   body.fusion
-    .row
-      .large-12.column
-        h1 Persona Fusion
-    .row
-      .large-12.column
-        form
-          .row
-            .large-4.medium-4.column
-              label First
-              select.persona#firstFusion
-            .large-4.medium-4.column
-              label Second
-              select.persona#secondFusion
-            .large-4.medium-4.column
-              label Third (Optional)
-              select.persona#thirdFusion
-    .row#results
-
-
+    #content
+      .row
+        .large-12.column
+          
+          h1
+            a(href="index.html").back &#8592; 
+            | Persona Fusion
+      .row
+        .large-12.column
+          form
+            .row
+              .large-4.medium-4.column
+                label First
+                select.persona#firstFusion
+              .large-4.medium-4.column
+                label Second
+                select.persona#secondFusion
+              .large-4.medium-4.column
+                label Third (Optional)
+                select.persona#thirdFusion
+      .row#results
+        
+      include footer
+    
     //- Scripts
     //- ==========================================
     script(src='scripts/vendor.js')

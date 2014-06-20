@@ -18,6 +18,25 @@
    ======================================================================== */
 @import "components/base";
 
+html, body {
+}
+
+#content { min-height: 100%; position: relative; }
+
+#results {
+	margin-bottom: 3rem;
+}
+
+#footer {
+	clear: both;
+	position: absolute;
+	width: 100%;
+	bottom: 0; left: 0; right: 0;
+	color: #aaa;
+	text-align: center;
+	p { margin: 0; font-size: 75%; }
+}
+
 body.fission {
 	#results {
 		li { 
