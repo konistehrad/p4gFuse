@@ -25,7 +25,8 @@ body.fission {
 			padding: 0.65rem;
 		}
 
-		li:nth-child(1) { text-align: right; }
+		li:first-child { text-align: right; }
+		li:last-child { text-align: left; }
 
 		ul:nth-child(odd) {
 			background-color:#eee;
@@ -34,11 +35,5 @@ body.fission {
 			background-color:#fff;
 		}
 
-		ul.small-block-grid-2 li:nth-child(2) {
-			text-align: left;
-		}
-		ul.small-block-grid-3 li:nth-child(3) {
-			text-align: left;
-		}
 	}
 }
