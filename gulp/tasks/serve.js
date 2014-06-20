@@ -6,14 +6,22 @@ var gulp = require('gulp');
 // Connect
 gulp.task('connect', function () {
   var connect = require('connect');
-  var app = connect()
-    .use(require('connect-livereload')({ port: config.livereloadPort }))
-    .use('/', connect.static('.tmp'))
-    .use('/', connect.static('app'))
-    // paths to bower_components should be relative to the current file
-    // e.g. in app/index.html you should use ../bower_components
-    .use('/bower_components', connect.static('bower_components'))
-    .use(connect.directory('app'));
+  var app;
+
+  if( config.production ) {
+    app = connect()
+        .use('/', connect.static(config.dist))
+        .use(connect.directory(config.dist));
+  } else {
+    app = connect()
+        .use(require('connect-livereload')({ port: config.livereloadPort }))
+        .use('/', connect.static('.tmp'))
+        .use('/', connect.static('app'))
+        // paths to bower_components should be relative to the current file
+        // e.g. in app/index.html you should use ../bower_components
+        .use('/bower_components', connect.static('bower_components'))
+        .use(connect.directory('app'));
+  }
 
   require('http').createServer(app)
     .listen(config.port)
