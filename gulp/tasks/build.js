@@ -12,7 +12,6 @@ gulp.task('build', ['jade', 'styles', 'vendor', 'browserify', 'images'], functio
             .src([config.dist+'/**/*'])
             .pipe(manifest({
                 hash: true,
-                preferOnline: true,
                 network: ['http://*', 'https://*', '*'],
                 filename: 'app.manifest',
                 exclude: 'app.manifest'
